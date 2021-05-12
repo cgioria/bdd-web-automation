@@ -1,0 +1,1393 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Valida comprobante vencido y comprobante no existente",
+    "children" : [ {
+      "name" : "Comprobante vencido",
+      "uid" : "24a7e79b26e30295",
+      "parentUid" : "865a9c3a626eb71502dbbf8b6287de82",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793310103,
+        "stop" : 1602793310104,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Comprobante no valido",
+      "uid" : "8f4d858988a66260",
+      "parentUid" : "865a9c3a626eb71502dbbf8b6287de82",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793310105,
+        "stop" : 1602793310108,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "865a9c3a626eb71502dbbf8b6287de82"
+  }, {
+    "name" : "Publicacion deuda manual",
+    "children" : [ {
+      "name" : "Login y generacion comprobante manual",
+      "uid" : "5cba8628ed14b2c3",
+      "parentUid" : "cb51a311a4106aef8d7a4f9a70a52a2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602793310372,
+        "stop" : 1602793320996,
+        "duration" : 10624
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cb51a311a4106aef8d7a4f9a70a52a2e"
+  }, {
+    "name" : "Funciones basicas de selenium con BDD",
+    "children" : [ {
+      "name" : "Abrir el navegador",
+      "uid" : "580f9a0098c9aea4",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321008,
+        "stop" : 1602793321008,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Abrir url",
+      "uid" : "8298a936ec0b18ce",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321009,
+        "stop" : 1602793321011,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Abrir con Navegador",
+      "uid" : "d0bca0012c962e07",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321012,
+        "stop" : 1602793321013,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Setear el DOM y trabajar con el",
+      "uid" : "a32698039615bdf7",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321014,
+        "stop" : 1602793321016,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Tomar capturas de pantalla",
+      "uid" : "a0990244f52aa08e",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321017,
+        "stop" : 1602793321019,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Dropdowns y textbox",
+      "uid" : "758a4e22696d374b",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321020,
+        "stop" : 1602793321022,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "clics Frames y Ventanas",
+      "uid" : "2b12b2eb8996b851",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321022,
+        "stop" : 1602793321025,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Buscar por texto scroll y waits",
+      "uid" : "ca0df2fd141cecbc",
+      "parentUid" : "e09c700914c41b111a764f478d96dbab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321025,
+        "stop" : 1602793321029,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e09c700914c41b111a764f478d96dbab"
+  }, {
+    "name" : "Pago deuda manual",
+    "children" : [ {
+      "name" : "1 Debito directo pago total",
+      "uid" : "cde2eda51e2b5a03",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321032,
+        "stop" : 1602793321033,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "2 Pago Informado ECHEQ",
+      "uid" : "5ee23f99a218615b",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321034,
+        "stop" : 1602793321038,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "3 Pago Supervielle",
+      "uid" : "aed5e43caf8318ce",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321039,
+        "stop" : 1602793321045,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.1 Tarjeta de Credito Visa",
+      "uid" : "3d1397b995c8f037",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321046,
+        "stop" : 1602793321051,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.6 Tarjeta de Credito Nevada",
+      "uid" : "e11e8e09d044a435",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321052,
+        "stop" : 1602793321057,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "5 Pago Redes Recaudacion Provincia",
+      "uid" : "d14e8711bf375db8",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321058,
+        "stop" : 1602793321064,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.1 Tarjeta de Debito Visa",
+      "uid" : "87cc8b137c6befdf",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321065,
+        "stop" : 1602793321068,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.2 Tarjeta de Debito Maestro",
+      "uid" : "2ed8a451c5a5fa20",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321069,
+        "stop" : 1602793321073,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9 Pago Facil",
+      "uid" : "b9f631c64a549279",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321074,
+        "stop" : 1602793321078,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "1 BtoB",
+      "uid" : "4ac9920087ddf898",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321320,
+        "stop" : 1602793321321,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "2 Debito directo pago parcial",
+      "uid" : "37d185f91c9a9e00",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321322,
+        "stop" : 1602793321327,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "3 Pago Informado - Canal ECHEQ",
+      "uid" : "d1eff78a359eaef3",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321328,
+        "stop" : 1602793321332,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4 Pago Informado- Canal Redes Recaudacion",
+      "uid" : "dbdc45a6d84e0cf7",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321333,
+        "stop" : 1602793321338,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "5 Pago Informado- Canal Pago Mis Cuentas",
+      "uid" : "240a351e6300f435",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321338,
+        "stop" : 1602793321344,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "6 Pago Informado- Canal Transferencia Banelco",
+      "uid" : "cc036251108c3a95",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321344,
+        "stop" : 1602793321348,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7 Pago Informado- Canal Transferencia Interbanking",
+      "uid" : "b8e12882465213c3",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321349,
+        "stop" : 1602793321354,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "8 Pago Informado- Canal Tarjeta Credito VISA",
+      "uid" : "8c3cbb9a16a61751",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321355,
+        "stop" : 1602793321360,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9 Pago Informado- Canal Tarjeta Credito Mastercard",
+      "uid" : "ef85030251fca540",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321362,
+        "stop" : 1602793321366,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "10 Pago Informado-T Canal Tarjeta Credito American",
+      "uid" : "f8f9de9d3b679ef7",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321367,
+        "stop" : 1602793321372,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "11 Pago Informado-Canal Terminal-Efectivo",
+      "uid" : "61d5308c5bcf1750",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321372,
+        "stop" : 1602793321377,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "12 Pago Informado-Canal Terminal-Cheque",
+      "uid" : "f51ef75a4dafe962",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321378,
+        "stop" : 1602793321382,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "13 Pago Informado-Cheque 3ro",
+      "uid" : "97acc3a9bf4760cc",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321383,
+        "stop" : 1602793321389,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "14 Pago Informado-Dep. en cuenta-Efectivo",
+      "uid" : "cf2f2845ec19b3af",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321390,
+        "stop" : 1602793321395,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "15 Pago Informado-Dep. en cuenta-Cheque",
+      "uid" : "d64d06b5958e8df7",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321396,
+        "stop" : 1602793321403,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "16 Pago Informado-Pago en empresa-Efectivo",
+      "uid" : "c8876bab2c298fef",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321404,
+        "stop" : 1602793321409,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "17 Pago Informado-Pago en empresa-Cheque",
+      "uid" : "139312fd5829b79a",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321410,
+        "stop" : 1602793321414,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "18 Pago Informado-Banelco/link",
+      "uid" : "9d4021fedf075fff",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321415,
+        "stop" : 1602793321422,
+        "duration" : 7
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "19 Pago Informado-Tran SNP y MEP",
+      "uid" : "4c7c1d27615123fa",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321430,
+        "stop" : 1602793321435,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "20 Pago Supervielle",
+      "uid" : "7971c733dc0a5e33",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602793321436,
+        "stop" : 1602793351123,
+        "duration" : 29687
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "21 Tarjeta de Credito Visa",
+      "uid" : "f3e267474ec267f8",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351127,
+        "stop" : 1602793351132,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "22 Tarjeta de Credito Mastercard",
+      "uid" : "195633a09889a1d6",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351136,
+        "stop" : 1602793351151,
+        "duration" : 15
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "23 Tarjeta de Credito Amex",
+      "uid" : "6c57f4eb8e65146a",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351152,
+        "stop" : 1602793351158,
+        "duration" : 6
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "24 Tarjeta de Credito Naranja",
+      "uid" : "eb0e61f6af0d6a93",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351159,
+        "stop" : 1602793351165,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "25 Tarjeta de Credito Visa Naranja",
+      "uid" : "18402a1461dc27c8",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351165,
+        "stop" : 1602793351172,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "26 Tarjeta de Credito Nevada",
+      "uid" : "f7212575fc54ff53",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351173,
+        "stop" : 1602793351177,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "27 Tarjeta de Debito Visa",
+      "uid" : "21a875f26c5a4c17",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351178,
+        "stop" : 1602793351183,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "28 Tarjeta de Debito Maestro",
+      "uid" : "3aa3361496f994c5",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793351184,
+        "stop" : 1602793351190,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "29 Pago Facil",
+      "uid" : "6d8da5bfc6c31809",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602793351191,
+        "stop" : 1602793371047,
+        "duration" : 19856
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "30 Pago Redes Recaudacion-Pago Facil",
+      "uid" : "c7578d7d8fbbc732",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793371048,
+        "stop" : 1602793371049,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "31 Debin",
+      "uid" : "c6b3e82c962b9a",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793371050,
+        "stop" : 1602793371055,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Deprecated Pago Redes Recaudacion-RapiPago",
+      "uid" : "69d0e031598ed574",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793371056,
+        "stop" : 1602793371060,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Deprecated Pago Redes Recaudacion Provincia",
+      "uid" : "648be3ddfd7b25b7",
+      "parentUid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793371061,
+        "stop" : 1602793371066,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae"
+  }, {
+    "name" : "Pago DEUDA por Archivo OBE",
+    "children" : [ {
+      "name" : "1 Debito directo pago total",
+      "uid" : "280c9efe4353f01a",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321082,
+        "stop" : 1602793321083,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "2 Pago Informado ECHEQ",
+      "uid" : "9652fd4019dbeb5c",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321084,
+        "stop" : 1602793321087,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "3 Pago Supervielle",
+      "uid" : "8a2e9c870a6b992c",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321088,
+        "stop" : 1602793321093,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.1 Tarjeta de Credito Visa",
+      "uid" : "9a18184e986e3c8b",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321094,
+        "stop" : 1602793321097,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.6 Tarjeta de Credito Nevada",
+      "uid" : "fa926ed89dcaf113",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321098,
+        "stop" : 1602793321102,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "5 Pago Redes Recaudacion Provincia",
+      "uid" : "1a9ca70aed277f99",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321103,
+        "stop" : 1602793321108,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.1 Tarjeta de Debito Visa",
+      "uid" : "8255befd4484c9b8",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321109,
+        "stop" : 1602793321112,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.2 Tarjeta de Debito Maestro",
+      "uid" : "20fc18f35ebefddc",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321113,
+        "stop" : 1602793321117,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9 Pago Facil",
+      "uid" : "4da58439bf0a6a7a",
+      "parentUid" : "56e35cbdd42959afe6cd619ac5026801",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321118,
+        "stop" : 1602793321124,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "56e35cbdd42959afe6cd619ac5026801"
+  }, {
+    "name" : "Pago DEUDOR por archivo OBE",
+    "children" : [ {
+      "name" : "1 Debito directo pago total",
+      "uid" : "18319e0adc7be179",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321127,
+        "stop" : 1602793321128,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "2 Pago Informado ECHEQ",
+      "uid" : "2c5eea69d5d42814",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321129,
+        "stop" : 1602793321132,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "3 Pago Supervielle",
+      "uid" : "96c5a20788f13099",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321133,
+        "stop" : 1602793321137,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.1 Tarjeta de Credito Visa",
+      "uid" : "55acfa445b4652c0",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321137,
+        "stop" : 1602793321142,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.6 Tarjeta de Credito Nevada",
+      "uid" : "5c5ffd879edad456",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321143,
+        "stop" : 1602793321147,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "5 Pago Redes Recaudacion Provincia",
+      "uid" : "9f070602b2a8af11",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321148,
+        "stop" : 1602793321153,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.1 Tarjeta de Debito Visa",
+      "uid" : "de44599519b9315c",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321154,
+        "stop" : 1602793321158,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.2 Tarjeta de Debito Maestro",
+      "uid" : "344d912a5ca5e04a",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321159,
+        "stop" : 1602793321163,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9 Pago Facil",
+      "uid" : "f64672e529b2021d",
+      "parentUid" : "9c768e2f930002172c9b8723f7e65a44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321164,
+        "stop" : 1602793321170,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9c768e2f930002172c9b8723f7e65a44"
+  }, {
+    "name" : "Pago DEUDA manual por OBE",
+    "children" : [ {
+      "name" : "1 Debito directo pago total",
+      "uid" : "659f80e41a9afbd2",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321174,
+        "stop" : 1602793321175,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "2 Pago Informado ECHEQ",
+      "uid" : "a488abb33d9c3301",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321176,
+        "stop" : 1602793321179,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "3 Pago Supervielle",
+      "uid" : "75a3410aae20ce15",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321180,
+        "stop" : 1602793321184,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.1 Tarjeta de Credito Visa",
+      "uid" : "113f6e9750cbd228",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321185,
+        "stop" : 1602793321188,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.6 Tarjeta de Credito Nevada",
+      "uid" : "2c531f14da37a790",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321189,
+        "stop" : 1602793321193,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "5 Pago Redes Recaudacion Provincia",
+      "uid" : "600cbd28f6b4f409",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321194,
+        "stop" : 1602793321198,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.1 Tarjeta de Debito Visa",
+      "uid" : "a60644ead4b0185",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321199,
+        "stop" : 1602793321203,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.2 Tarjeta de Debito Maestro",
+      "uid" : "c806aa81efc7d7f1",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321204,
+        "stop" : 1602793321209,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9 Pago Facil",
+      "uid" : "400b24262a51b9c2",
+      "parentUid" : "a25954753964de8ee43917d10644ba01",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321209,
+        "stop" : 1602793321213,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a25954753964de8ee43917d10644ba01"
+  }, {
+    "name" : "Pago DEUDA  por archivo Sftp",
+    "children" : [ {
+      "name" : "1 Debito directo pago total",
+      "uid" : "68253194b465b4ef",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321218,
+        "stop" : 1602793321219,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "2 Pago Informado ECHEQ",
+      "uid" : "7a6f2520cd04f270",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321220,
+        "stop" : 1602793321223,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "3 Pago Supervielle",
+      "uid" : "6cf8f6c11439a0db",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321224,
+        "stop" : 1602793321228,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.1 Tarjeta de Credito Visa",
+      "uid" : "d6f7e398fdf76d2e",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321229,
+        "stop" : 1602793321233,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.6 Tarjeta de Credito Nevada",
+      "uid" : "a87745dc5027950f",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321234,
+        "stop" : 1602793321238,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "5 Pago Redes Recaudacion Provincia",
+      "uid" : "3536b90dac13182c",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321239,
+        "stop" : 1602793321244,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.1 Tarjeta de Debito Visa",
+      "uid" : "b5fe35283aa09f63",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321244,
+        "stop" : 1602793321249,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.2 Tarjeta de Debito Maestro",
+      "uid" : "82e102efbd2c3517",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321250,
+        "stop" : 1602793321254,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9 Pago Facil",
+      "uid" : "efd277acf0e9015e",
+      "parentUid" : "325b813cf127e6d7d385934a6d374df4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321255,
+        "stop" : 1602793321259,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "325b813cf127e6d7d385934a6d374df4"
+  }, {
+    "name" : "Pago DEUDOR  por archivo SFTP",
+    "children" : [ {
+      "name" : "1 Debito directo pago total",
+      "uid" : "7792fcaa4a82c7f",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321264,
+        "stop" : 1602793321265,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "2 Pago Informado ECHEQ",
+      "uid" : "fe50e805b9a252c1",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321265,
+        "stop" : 1602793321269,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "3 Pago Supervielle",
+      "uid" : "758baaac5d2bb2e8",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321270,
+        "stop" : 1602793321274,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.1 Tarjeta de Credito Visa",
+      "uid" : "a89fb06d0137f112",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321275,
+        "stop" : 1602793321279,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "4.6 Tarjeta de Credito Nevada",
+      "uid" : "4544427ec01907a",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321280,
+        "stop" : 1602793321284,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "5 Pago Redes Recaudacion Provincia",
+      "uid" : "99e5787705199d6",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321285,
+        "stop" : 1602793321289,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.1 Tarjeta de Debito Visa",
+      "uid" : "8129cf7d3beed76b",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321290,
+        "stop" : 1602793321294,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "7.2 Tarjeta de Debito Maestro",
+      "uid" : "23afdaf6a78800be",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321295,
+        "stop" : 1602793321299,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "9 Pago Facil",
+      "uid" : "8873ed6e7562b2fa",
+      "parentUid" : "0ecdd5b38cd75edb080c30de281f0267",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321300,
+        "stop" : 1602793321305,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0ecdd5b38cd75edb080c30de281f0267"
+  }, {
+    "name" : "ECOI-1115",
+    "children" : [ {
+      "name" : "Upload y procesamiento de archivo csv",
+      "uid" : "ace2bdf440717e05",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321309,
+        "stop" : 1602793321310,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Descarga template excel",
+      "uid" : "31ff756d7c5fb389",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793321311,
+        "stop" : 1602793321315,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por medio de pago . Medio pago Interbanking mas fecha",
+      "uid" : "8cf79027b6a2a802",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853550155,
+        "stop" : 1602853566062,
+        "duration" : 15907
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por Estado . Estado Pendiente mas fecha",
+      "uid" : "ca27f8759a300830",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853566064,
+        "stop" : 1602853581927,
+        "duration" : 15863
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por Estado . Estado Procesando mas fecha",
+      "uid" : "82846da8ad8d4957",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853581928,
+        "stop" : 1602853597931,
+        "duration" : 16003
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por Estado . Estado Rechazado",
+      "uid" : "5aeba0d7e1b95149",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853597932,
+        "stop" : 1602853610698,
+        "duration" : 12766
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por medio de pago . Medio pago Pago informado",
+      "uid" : "d87c1961c89e496e",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853610699,
+        "stop" : 1602853624070,
+        "duration" : 13371
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por medio de pago . Medio pago Pago Supervielle",
+      "uid" : "e23f64d34c158ef2",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853624071,
+        "stop" : 1602853637579,
+        "duration" : 13508
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por medio de pago . Medio pago Tarjeta Debito",
+      "uid" : "ca96445c44f36db3",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853637582,
+        "stop" : 1602853653198,
+        "duration" : 15616
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por medio de pago . Medio pago Tarjeta Credito",
+      "uid" : "dd6c0a0e6c5d87ad",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853653199,
+        "stop" : 1602853669037,
+        "duration" : 15838
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por Estado . Estado Cancelado",
+      "uid" : "121314cdbe7b328c",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853669038,
+        "stop" : 1602853682552,
+        "duration" : 13514
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "OBE Filtro por Estado . Estado Procesando",
+      "uid" : "5d286ab12041cb13",
+      "parentUid" : "9d03684c453f0d2b866a328327a66966",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602853682554,
+        "stop" : 1602853695366,
+        "duration" : 12812
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9d03684c453f0d2b866a328327a66966"
+  }, {
+    "name" : "Pago deuda manual modalidad de pago abierta 1",
+    "children" : [ {
+      "name" : "2 Debito directo pago parcial",
+      "uid" : "2d29a3c055c88ecc",
+      "parentUid" : "18b6bdba3937fb206e788d1c216cb5b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1612454313196,
+        "stop" : 1612454333910,
+        "duration" : 20714
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "29 Pago Facil",
+      "uid" : "1d3c5ac464564952",
+      "parentUid" : "18b6bdba3937fb206e788d1c216cb5b7",
+      "status" : "broken",
+      "time" : {
+        "start" : 1612454333977,
+        "stop" : 1612454365220,
+        "duration" : 31243
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "18b6bdba3937fb206e788d1c216cb5b7"
+  } ]
+}

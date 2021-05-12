@@ -1,0 +1,225 @@
+<testsuite name="Publicacion deuda.multicanal_publicacion.Publicacion deuda multicanal" tests="3" errors="0" failures="0" skipped="0" time="207.619526" timestamp="2021-01-06T10:01:54.982520" hostname="LAPTOP-6J6TU9UN"><testcase classname="Publicacion deuda.multicanal_publicacion.Publicacion deuda multicanal" name="1 Canal Expensas" status="passed" time="23.465643"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 1 Canal Expensas
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb ... passed in 8.289s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.012s
+    And En el combobox MultiC_CodCanal selecciono 5 ... passed in 0.120s
+    And En el campo MultiC_Usuario escribo andrusaba ... passed in 0.204s
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761 ... passed in 0.170s
+    And En el campo MultiC_IdComprobante escribo 270001631 ... passed in 0.156s
+    And En el combobox MultiC_Producto selecciono 1 ... passed in 0.125s
+    And En el campo MultiC_Importe escribo 900 ... passed in 0.128s
+    And En el campo MultiC_DocPagador escribo 90734503456 ... passed in 0.155s
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas ... passed in 0.191s
+    And En el campo MultiC_DocRecaudador escribo 30712389628 ... passed in 0.134s
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos ... passed in 0.113s
+    And En el campo MultiC_Vencimiento1 escribo 31/12/2020 ... passed in 0.153s
+    And En el combobox MultiC_Modalidad selecciono 1 ... passed in 0.108s
+    When Hago clic en MultiC_Enviar ... passed in 0.429s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And Espero 10 segundos ... passed in 10.117s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.003s
+    And Capturo pantalla: Boton_CExpensas ... passed in 0.372s
+    And Tomar Captura: CExpensas ... passed in 0.356s
+    Then cierro la app ... passed in 2.130s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento MultiC_CodCanal
+get_select_elements: //select[contains(@id,'canal')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Usuario
+get_elements: //input[contains(@id,'txtUsuario')]
+get_elements: //input[contains(@id,'txtUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_EmpresaUsuario
+get_elements: //input[contains(@id,'empresaUsuario')]
+get_elements: //input[contains(@id,'empresaUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_IdComprobante
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+Esperar_Elemento: Se visualizo el elemento MultiC_Producto
+get_select_elements: //select[contains(@id,'Producto')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Importe
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocPagador
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialPagador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocRecaudador
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialRecaudador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_Vencimiento1
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+Esperar_Elemento: Se visualizo el elemento MultiC_Modalidad
+get_select_elements: //select[@id='Mode']
+get_elements: //input[@type='submit']
+Esperar: Inicia (10)
+Esperar: Carga Finalizada ... 
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+C:\Supervielle\Recaudaciones\src/data/capturas/06-01-2021/CHROME/095826//CExpensas_(095848).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Publicacion deuda.multicanal_publicacion.Publicacion deuda multicanal" name="2 Mun Godoy Cruz" status="passed" time="160.463375"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 2 Mun Godoy Cruz
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb ... passed in 3.901s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.003s
+    And En el combobox MultiC_CodCanal selecciono 3 ... passed in 0.148s
+    And En el campo MultiC_Usuario escribo andrusaba ... passed in 0.218s
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761 ... passed in 0.144s
+    And En el campo MultiC_IdComprobante escribo 270001631 ... passed in 0.119s
+    And En el combobox MultiC_Producto selecciono 1 ... passed in 0.090s
+    And En el campo MultiC_Importe escribo 8 ... passed in 0.114s
+    And En el campo MultiC_DocPagador escribo 90734503456 ... passed in 0.147s
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas ... passed in 0.167s
+    And En el campo MultiC_DocRecaudador escribo 30712389628 ... passed in 0.131s
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos ... passed in 0.150s
+    And En el campo MultiC_Vencimiento1 escribo 30/12/2020 ... passed in 0.170s
+    And En el combobox MultiC_Modalidad selecciono 1 ... passed in 0.109s
+    When Hago clic en MultiC_Enviar ... passed in 0.359s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And Espero 150 segundos ... passed in 151.635s
+    And Capturo pantalla: Boton_MunGodoyC ... passed in 0.347s
+    And Tomar Captura: MunGodoyC ... passed in 0.353s
+    Then cierro la app ... passed in 2.158s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento MultiC_CodCanal
+get_select_elements: //select[contains(@id,'canal')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Usuario
+get_elements: //input[contains(@id,'txtUsuario')]
+get_elements: //input[contains(@id,'txtUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_EmpresaUsuario
+get_elements: //input[contains(@id,'empresaUsuario')]
+get_elements: //input[contains(@id,'empresaUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_IdComprobante
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+Esperar_Elemento: Se visualizo el elemento MultiC_Producto
+get_select_elements: //select[contains(@id,'Producto')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Importe
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocPagador
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialPagador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocRecaudador
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialRecaudador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_Vencimiento1
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+Esperar_Elemento: Se visualizo el elemento MultiC_Modalidad
+get_select_elements: //select[@id='Mode']
+get_elements: //input[@type='submit']
+Esperar: Inicia (150)
+Esperar: Carga Finalizada ... 
+C:\Supervielle\Recaudaciones\src/data/capturas/06-01-2021/CHROME/095826//MunGodoyC_(100128).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Publicacion deuda.multicanal_publicacion.Publicacion deuda multicanal" name="3 Mun Mendoza" status="passed" time="23.690508"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 3 Mun Mendoza
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb ... passed in 3.866s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.002s
+    And En el combobox MultiC_CodCanal selecciono 4 ... passed in 0.117s
+    And En el campo MultiC_Usuario escribo andrusaba ... passed in 0.205s
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761 ... passed in 0.110s
+    And En el campo MultiC_IdComprobante escribo 270001631 ... passed in 0.102s
+    And En el combobox MultiC_Producto selecciono 1 ... passed in 0.063s
+    And En el campo MultiC_Importe escribo 7 ... passed in 0.101s
+    And En el campo MultiC_DocPagador escribo 90734503456 ... passed in 0.117s
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas ... passed in 0.146s
+    And En el campo MultiC_DocRecaudador escribo 30712389628 ... passed in 0.113s
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos ... passed in 0.104s
+    And En el campo MultiC_Vencimiento1 escribo 30/12/2020 ... passed in 0.141s
+    And En el combobox MultiC_Modalidad selecciono 1 ... passed in 0.092s
+    When Hago clic en MultiC_Enviar ... passed in 0.388s
+    And Esperar que finalice la carga ... passed in 0.003s
+    And Espero 15 segundos ... passed in 15.152s
+    And Capturo pantalla: Boton_MunMendoza ... passed in 0.371s
+    And Tomar Captura: MunMendoza ... passed in 0.362s
+    Then cierro la app ... passed in 2.136s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento MultiC_CodCanal
+get_select_elements: //select[contains(@id,'canal')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Usuario
+get_elements: //input[contains(@id,'txtUsuario')]
+get_elements: //input[contains(@id,'txtUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_EmpresaUsuario
+get_elements: //input[contains(@id,'empresaUsuario')]
+get_elements: //input[contains(@id,'empresaUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_IdComprobante
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+Esperar_Elemento: Se visualizo el elemento MultiC_Producto
+get_select_elements: //select[contains(@id,'Producto')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Importe
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocPagador
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialPagador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocRecaudador
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialRecaudador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_Vencimiento1
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+Esperar_Elemento: Se visualizo el elemento MultiC_Modalidad
+get_select_elements: //select[@id='Mode']
+get_elements: //input[@type='submit']
+Esperar: Inicia (15)
+Esperar: Carga Finalizada ... 
+C:\Supervielle\Recaudaciones\src/data/capturas/06-01-2021/CHROME/095826//MunMendoza_(100152).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,121 @@
+{
+  "uid" : "a32698039615bdf7",
+  "name" : "Setear el DOM y trabajar con el",
+  "historyId" : "5f898a8f976506248248e8231850a7e3",
+  "time" : {
+    "start" : 1602793321014,
+    "stop" : 1602793321016,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Given Abrir la aplicacion",
+      "time" : {
+        "start" : 1602793321016,
+        "stop" : 1602793321016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Cargo el DOM de la App: Spotify_registro",
+      "time" : {
+        "start" : 1602793321016,
+        "stop" : 1602793321016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And En el campo Email escribo mervindiazlugo@gmail.com",
+      "time" : {
+        "start" : 1602793321016,
+        "stop" : 1602793321016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then cierro la app",
+      "time" : {
+        "start" : 1602793321016,
+        "stop" : 1602793321016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "DOM"
+  }, {
+    "name" : "tag",
+    "value" : "FuncionesSelenium"
+  }, {
+    "name" : "tag",
+    "value" : "selenium"
+  }, {
+    "name" : "feature",
+    "value" : "Funciones basicas de selenium con BDD"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "DOM", "selenium", "FuncionesSelenium" ]
+  },
+  "source" : "a32698039615bdf7.json",
+  "parameterValues" : [ ]
+}

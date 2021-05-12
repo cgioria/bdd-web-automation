@@ -1,0 +1,357 @@
+<testsuite name="Sprint24.ECOI-1055.ECOI-1115" tests="14" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.995094" hostname="LAPTOP-6J6TU9UN"><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Interbanking mas fecha" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Interbanking mas fecha
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And En el campo Cons Fec Cobro escribo 13/10/2020 ... untested in 0.000s
+    And Limpio el campo Cons Fec Cobro con Enter ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MIntr Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsFechIntr ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por Estado . Estado Pendiente mas fecha" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por Estado . Estado Pendiente mas fecha
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And En el campo Cons Fec Cobro escribo 13/10/2020 ... untested in 0.000s
+    And Limpio el campo Cons Fec Cobro con Enter ... untested in 0.000s
+    And Hago clic en Cons Est Cobro ... untested in 0.000s
+    And Hago clic en Cons Epend Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsFechPend ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por Estado . Estado Procesando mas fecha" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por Estado . Estado Procesando mas fecha
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And En el campo Cons Fec Cobro escribo 13/10/2020 ... untested in 0.000s
+    And Limpio el campo Cons Fec Cobro con Enter ... untested in 0.000s
+    And Hago clic en Cons Est Cobro ... untested in 0.000s
+    And Hago clic en Cons EProc Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsFechProc ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por Estado . Estado Rechazado" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por Estado . Estado Rechazado
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Est Cobro ... untested in 0.000s
+    And Hago clic en Cons ERec Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsRec ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Pago informado" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Pago informado
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MPI Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsFechPin ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Pago Supervielle" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Pago Supervielle
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MSup Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsPSup ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Tarjeta Debito" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Tarjeta Debito
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MTDeb Cobro ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsTDeb ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Tarjeta Credito" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Tarjeta Credito
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MTCr Cobro ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsTCr ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por Estado . Estado Cancelado" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por Estado . Estado Cancelado
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Est Cobro ... untested in 0.000s
+    And Hago clic en Cons ECan Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsCanc ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por Estado . Estado Procesando" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por Estado . Estado Procesando
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Est Cobro ... untested in 0.000s
+    And Hago clic en Cons EPro Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsEPRoc ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Pago Voluntario" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Pago Voluntario
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MTPVol Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsPVol ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Pago Por Caja" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Pago Por Caja
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MTPCaj Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsPCaj ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Debin" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Debin
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons MTDebin Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsPDebin ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint24.ECOI-1055.ECOI-1115" name="OBE Filtro por medio de pago . Medio pago Fácil" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: OBE Filtro por medio de pago . Medio pago Fácil
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Hago clic en Cons Mpag Cobro ... untested in 0.000s
+    And Hago clic en Cons Pfac Cobro ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Cons ... untested in 0.000s
+    And Tomar Captura: ConsPfac ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

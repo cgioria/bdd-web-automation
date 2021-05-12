@@ -1,0 +1,2776 @@
+<testsuite errors="10" failures="0" hostname="runner-m9uidjtc-project-1290-concurrent-0g42tn" name="Boton_Pago_Deudor.Pago deudor manual" skipped="0" tests="33" time="839.777877" timestamp="2020-11-02T15:11:11.112261"><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="1 BtoB" status="failed" time="39.821335"><error message="Message: &#10;" type="TimeoutException">
+<![CDATA[
+Failing step: When Genera comprobante NroPagoComp ... failed in 21.047s
+Location: features/Boton_Pago_Deudor.feature:28
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 64, in step_impl
+    Selenium.assert_notnull(self, locator)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 701, in assert_notnull
+    wait.until(EC.presence_of_element_located((By.XPATH, self.json_ValueToFind)))
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ...]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 1 BtoB
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.701s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.083s
+    And Limpio el campo Importe Pago con Del ... passed in 3.040s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.047s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.042s
+    And En el combobox Medio de Pago selecciono 1 ... passed in 0.239s
+    And Hago clic en Boton Pago ... passed in 0.365s
+    And Hago clic en Boton Generar Cupon ... passed in 0.253s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoComp ... failed in 21.047s
+    And Escribo NroPagoComp ... skipped in 0.000s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoBtoB ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="2 Debito directo pago parcial" status="passed" time="19.36479"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 2 Debito directo pago parcial
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.433s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 2 ... passed in 0.196s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.076s
+    And Limpio el campo Importe Pago con Del ... passed in 3.040s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.047s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.063s
+    And En el campo CBU escribo 0270100010000012770011 ... passed in 0.297s
+    And Hago clic en Boton Pago ... passed in 0.282s
+    And Hago clic en Boton Generar Cupon ... passed in 0.270s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoComp ... passed in 0.052s
+    And Escribo NroPagoComp ... passed in 0.034s
+    And Capturo pantalla: Pago ... passed in 0.243s
+    And Tomar Captura: CompPagoDebDir ... passed in 0.262s
+    Then cierro la app ... passed in 0.066s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento CBU
+get_elements: //input[@id='CbuEmpresaOrdenante']
+get_elements: //input[@id='CbuEmpresaOrdenante']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[8]//td[2]//b[1]
+Text Value : 93913
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoDebDir_(145809).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="3 Pago Informado - Canal ECHEQ" status="passed" time="20.973222"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 3 Pago Informado - Canal ECHEQ
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.509s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.218s
+    And En el combobox Canal selecciono 42 ... passed in 0.515s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.089s
+    And Limpio el campo Importe Pago con Del ... passed in 3.045s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.039s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.048s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.342s
+    And En el campo Ref Informada escribo XXXXXXXX ... passed in 0.217s
+    And En el campo Echeq nro escribo 456789098765 ... passed in 0.224s
+    And En el campo Banco nro escribo 3456 ... passed in 0.185s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.157s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.226s
+    And Hago clic en Boton Pago ... passed in 0.101s
+    And Hago clic en Confirma ... passed in 0.457s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.043s
+    And Escribo NroPagoCompPinf ... passed in 0.026s
+    And Capturo pantalla: Pago ... passed in 0.225s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.243s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Ref Informada
+get_elements: //input[@id='Pago_PagoInformado_Referencia']
+get_elements: //input[@id='Pago_PagoInformado_Referencia']
+Esperar_Elemento: Se visualizo el elemento Echeq nro
+get_elements: //input[@id='Pago_PagoInformado_EcheqNro']
+get_elements: //input[@id='Pago_PagoInformado_EcheqNro']
+Esperar_Elemento: Se visualizo el elemento Banco nro
+get_elements: //input[@id='Pago_PagoInformado_BancoNro']
+get_elements: //input[@id='Pago_PagoInformado_BancoNro']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93914
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(145830).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="4 Pago Informado- Canal Redes Recaudacion" status="passed" time="20.156266"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 4 Pago Informado- Canal Redes Recaudacion
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.498s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.231s
+    And En el combobox Canal selecciono 4 ... passed in 0.384s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.078s
+    And Limpio el campo Importe Pago con Del ... passed in 3.044s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.043s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.054s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.333s
+    And En el campo Tran Informada escribo 8909348233 ... passed in 0.193s
+    And En el campo Nro sucursal escribo 345 ... passed in 0.194s
+    And Hago clic en Boton Pago ... passed in 0.098s
+    And Hago clic en Confirma ... passed in 0.383s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.041s
+    And Escribo NroPagoCompPinf ... passed in 0.030s
+    And Capturo pantalla: Pago ... passed in 0.259s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.226s
+    Then cierro la app ... passed in 0.064s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+Esperar_Elemento: Se visualizo el elemento Nro sucursal
+get_elements: //input[@id='Pago_PagoInformado_NroSucursal']
+get_elements: //input[@id='Pago_PagoInformado_NroSucursal']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93915
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(145851).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="5 Pago Informado- Canal Pago Mis Cuentas" status="passed" time="20.338766"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 5 Pago Informado- Canal Pago Mis Cuentas
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.774s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.227s
+    And En el combobox Canal selecciono 5 ... passed in 0.437s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.085s
+    And Limpio el campo Importe Pago con Del ... passed in 3.058s
+    And Limpio el campo Importe Pago con 1 ... passed in 3.050s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.048s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.347s
+    And En el campo Tran Informada escribo 8909348233 ... passed in 0.209s
+    And Hago clic en Boton Pago ... passed in 0.244s
+    And Hago clic en Confirma ... passed in 0.258s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.045s
+    And Escribo NroPagoCompPinf ... passed in 0.031s
+    And Capturo pantalla: Pago ... passed in 0.226s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.233s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93916
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(145911).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="6 Pago Informado- Canal Transferencia Banelco" status="passed" time="20.834783"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 6 Pago Informado- Canal Transferencia Banelco
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.501s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.234s
+    And En el combobox Canal selecciono 6 ... passed in 0.476s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.091s
+    And Limpio el campo Importe Pago con Del ... passed in 3.049s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.053s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.062s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.358s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.173s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.238s
+    And En el campo CBU_CPagador escribo 0270100010000012770011 ... passed in 0.281s
+    And En el campo Nro_Tran_pagador escribo 8904445566776 ... passed in 0.217s
+    And Hago clic en Boton Pago ... passed in 0.094s
+    And Hago clic en Confirma ... passed in 0.402s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.051s
+    And Escribo NroPagoCompPinf ... passed in 0.032s
+    And Capturo pantalla: Pago ... passed in 0.232s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.226s
+    Then cierro la app ... passed in 0.061s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento CBU_CPagador
+get_elements: //input[@id='Pago_PagoInformado_CbuPagador']
+get_elements: //input[@id='Pago_PagoInformado_CbuPagador']
+Esperar_Elemento: Se visualizo el elemento Nro_Tran_pagador
+get_elements: //input[@id='Pago_PagoInformado_NroTransferencia']
+get_elements: //input[@id='Pago_PagoInformado_NroTransferencia']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93917
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(145932).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="7 Pago Informado- Canal Transferencia Interbanking" status="passed" time="20.677044"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 7 Pago Informado- Canal Transferencia Interbanking
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.540s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.203s
+    And En el combobox Canal selecciono 7 ... passed in 0.467s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.090s
+    And Limpio el campo Importe Pago con Del ... passed in 3.061s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.053s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.055s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.321s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.148s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.219s
+    And En el campo CBU_CPagador escribo 0270100010000012770011 ... passed in 0.242s
+    And En el campo Nro_Tran_pagador escribo 8904445566776 ... passed in 0.206s
+    And Hago clic en Boton Pago ... passed in 0.101s
+    And Hago clic en Confirma ... passed in 0.382s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.039s
+    And Escribo NroPagoCompPinf ... passed in 0.029s
+    And Capturo pantalla: Pago ... passed in 0.232s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.223s
+    Then cierro la app ... passed in 0.063s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento CBU_CPagador
+get_elements: //input[@id='Pago_PagoInformado_CbuPagador']
+get_elements: //input[@id='Pago_PagoInformado_CbuPagador']
+Esperar_Elemento: Se visualizo el elemento Nro_Tran_pagador
+get_elements: //input[@id='Pago_PagoInformado_NroTransferencia']
+get_elements: //input[@id='Pago_PagoInformado_NroTransferencia']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93918
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(145953).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="8 Pago Informado- Canal Tarjeta Credito VISA" status="passed" time="20.257121"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 8 Pago Informado- Canal Tarjeta Credito VISA
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.584s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.222s
+    And En el combobox Canal selecciono 8 ... passed in 0.421s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.086s
+    And Limpio el campo Importe Pago con Del ... passed in 3.050s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.042s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.060s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.345s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.238s
+    And En el combobox PI_MarcaTC selecciono 18 ... passed in 0.125s
+    And Hago clic en Boton Pago ... passed in 0.098s
+    And Hago clic en Confirma ... passed in 0.381s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.048s
+    And Escribo NroPagoCompPinf ... passed in 0.028s
+    And Capturo pantalla: Pago ... passed in 0.234s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.231s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+Esperar_Elemento: Se visualizo el elemento PI_MarcaTC
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93919
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150013).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="9 Pago Informado- Canal Tarjeta Credito Mastercard" status="passed" time="20.536003"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 9 Pago Informado- Canal Tarjeta Credito Mastercard
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.800s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.206s
+    And En el combobox Canal selecciono 8 ... passed in 0.500s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.083s
+    And Limpio el campo Importe Pago con Del ... passed in 3.046s
+    And Limpio el campo Importe Pago con 9 ... passed in 3.041s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.040s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.320s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.208s
+    And En el combobox PI_MarcaTC selecciono 19 ... passed in 0.190s
+    And Hago clic en Boton Pago ... passed in 0.113s
+    And Hago clic en Confirma ... passed in 0.375s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.046s
+    And Escribo NroPagoCompPinf ... passed in 0.037s
+    And Capturo pantalla: Pago ... passed in 0.234s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.229s
+    Then cierro la app ... passed in 0.064s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+Esperar_Elemento: Se visualizo el elemento PI_MarcaTC
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93920
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150033).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="10 Pago Informado-T Canal Tarjeta Credito American" status="passed" time="20.401142"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 10 Pago Informado-T Canal Tarjeta Credito American
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.573s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.224s
+    And En el combobox Canal selecciono 8 ... passed in 0.461s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.082s
+    And Limpio el campo Importe Pago con Del ... passed in 3.045s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.053s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.067s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.364s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.265s
+    And En el combobox PI_MarcaTC selecciono 20 ... passed in 0.159s
+    And Hago clic en Boton Pago ... passed in 0.095s
+    And Hago clic en Confirma ... passed in 0.370s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.048s
+    And Escribo NroPagoCompPinf ... passed in 0.035s
+    And Capturo pantalla: Pago ... passed in 0.247s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.247s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+Esperar_Elemento: Se visualizo el elemento PI_MarcaTC
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93921
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150054).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="11 Pago Informado-Canal Terminal-Efectivo" status="passed" time="20.209671"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 11 Pago Informado-Canal Terminal-Efectivo
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.565s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.208s
+    And En el combobox Canal selecciono 9 ... passed in 0.442s
+    And En el combobox IdSubTipoMedioPago selecciono 21 ... passed in 0.117s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.088s
+    And Limpio el campo Importe Pago con Del ... passed in 3.046s
+    And Limpio el campo Importe Pago con 1 ... passed in 3.045s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.042s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.329s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.223s
+    And Hago clic en Boton Pago ... passed in 0.098s
+    And Hago clic en Confirma ... passed in 0.368s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.051s
+    And Escribo NroPagoCompPinf ... passed in 0.033s
+    And Capturo pantalla: Pago ... passed in 0.247s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.237s
+    Then cierro la app ... passed in 0.067s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento IdSubTipoMedioPago
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93922
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150114).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="12 Pago Informado-Canal Terminal-Cheque" status="passed" time="21.319284"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 12 Pago Informado-Canal Terminal-Cheque
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.559s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.208s
+    And En el combobox Canal selecciono 9 ... passed in 0.485s
+    And En el combobox IdSubTipoMedioPago selecciono 22 ... passed in 0.200s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.185s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.244s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... passed in 0.205s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... passed in 0.270s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.094s
+    And Limpio el campo Importe Pago con Del ... passed in 3.042s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.038s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.053s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.354s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.242s
+    And Hago clic en Boton Pago ... passed in 0.129s
+    And Hago clic en Confirma ... passed in 0.396s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.041s
+    And Escribo NroPagoCompPinf ... passed in 0.029s
+    And Capturo pantalla: Pago ... passed in 0.240s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.241s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento IdSubTipoMedioPago
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_NroCheque
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_FechaPagoCheque
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93923
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150135).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="13 Pago Informado-Cheque 3ro" status="passed" time="20.801263"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 13 Pago Informado-Cheque 3ro
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.645s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.213s
+    And En el combobox Canal selecciono 10 ... passed in 0.536s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.286s
+    And En el campo PagoInformado_NroCheque escribo 8904445566776 ... passed in 0.286s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... passed in 0.301s
+    And En el campo PagoInformado_NombreBanco escribo Banco Mayo ... passed in 0.201s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.093s
+    And Limpio el campo Importe Pago con Del ... passed in 3.043s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.044s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.041s
+    And Hago clic en Boton Pago ... passed in 0.121s
+    And Hago clic en Confirma ... passed in 0.378s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.045s
+    And Escribo NroPagoCompPinf ... passed in 0.029s
+    And Capturo pantalla: Pago ... passed in 0.236s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.237s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_NroCheque
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_FechaPagoCheque
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_NombreBanco
+get_elements: //input[@id='Pago_PagoInformado_NombreBanco']
+get_elements: //input[@id='Pago_PagoInformado_NombreBanco']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93924
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150156).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="14 Pago Informado-Dep. en cuenta-Efectivo" status="passed" time="21.078195"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 14 Pago Informado-Dep. en cuenta-Efectivo
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.591s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.201s
+    And En el combobox Canal selecciono 11 ... passed in 0.474s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.328s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.245s
+    And En el combobox Otro medio inf selecciono 23 ... passed in 0.110s
+    And En el combobox Otro medio inf selecciono 24 ... passed in 0.134s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.198s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... passed in 0.189s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... passed in 0.261s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.081s
+    And Limpio el campo Importe Pago con Del ... passed in 3.042s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.044s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.039s
+    And Hago clic en Boton Pago ... passed in 0.132s
+    And Hago clic en Confirma ... passed in 0.394s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.042s
+    And Escribo NroPagoCompPinf ... passed in 0.029s
+    And Capturo pantalla: Pago ... passed in 0.240s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.231s
+    Then cierro la app ... passed in 0.069s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+Esperar_Elemento: Se visualizo el elemento Otro medio inf
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+Esperar_Elemento: Se visualizo el elemento Otro medio inf
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_NroCheque
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_FechaPagoCheque
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93925
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150217).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="15 Pago Informado-Dep. en cuenta-Cheque" status="passed" time="21.27476"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 15 Pago Informado-Dep. en cuenta-Cheque
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.658s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.198s
+    And En el combobox Canal selecciono 11 ... passed in 0.458s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.299s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.265s
+    And En el combobox Otro medio inf selecciono 24 ... passed in 0.191s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.193s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.195s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... passed in 0.196s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... passed in 0.285s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.087s
+    And Limpio el campo Importe Pago con Del ... passed in 3.043s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.048s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.043s
+    And Hago clic en Boton Pago ... passed in 0.134s
+    And Hago clic en Confirma ... passed in 0.383s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.042s
+    And Escribo NroPagoCompPinf ... passed in 0.029s
+    And Capturo pantalla: Pago ... passed in 0.238s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.223s
+    Then cierro la app ... passed in 0.063s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+Esperar_Elemento: Se visualizo el elemento Otro medio inf
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_NroCheque
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_FechaPagoCheque
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93926
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150238).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="16 Pago Informado-Pago en empresa-Efectivo" status="passed" time="20.615847"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 16 Pago Informado-Pago en empresa-Efectivo
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.912s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.239s
+    And En el combobox Canal selecciono 12 ... passed in 0.445s
+    And En el combobox Otro medio inf selecciono 25 ... passed in 0.133s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.288s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.219s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.076s
+    And Limpio el campo Importe Pago con Del ... passed in 3.047s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.047s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.049s
+    And Hago clic en Boton Pago ... passed in 0.142s
+    And Hago clic en Confirma ... passed in 0.390s
+    And Espero 3 segundos ... passed in 3.004s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.050s
+    And Escribo NroPagoCompPinf ... passed in 0.035s
+    And Capturo pantalla: Pago ... passed in 0.249s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.230s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Otro medio inf
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93927
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150259).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="17 Pago Informado-Pago en empresa-Cheque" status="passed" time="21.269362"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 17 Pago Informado-Pago en empresa-Cheque
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.559s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.226s
+    And En el combobox Canal selecciono 12 ... passed in 0.468s
+    And En el combobox Otro medio inf selecciono 26 ... passed in 0.170s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.151s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.321s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.238s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.261s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... passed in 0.216s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... passed in 0.275s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.094s
+    And Limpio el campo Importe Pago con Del ... passed in 3.041s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.052s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.064s
+    And Hago clic en Boton Pago ... passed in 0.150s
+    And Hago clic en Confirma ... passed in 0.367s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.042s
+    And Escribo NroPagoCompPinf ... passed in 0.030s
+    And Capturo pantalla: Pago ... passed in 0.224s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.242s
+    Then cierro la app ... passed in 0.073s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Otro medio inf
+get_select_elements: //div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_NroCheque
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+get_elements: //input[@id='Pago_PagoInformado_NroCheque']
+Esperar_Elemento: Se visualizo el elemento PagoInformado_FechaPagoCheque
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='Pago_PagoInformado_FechaPagoCheque']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93928
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150320).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="18 Pago Informado-Banelco/link" status="passed" time="22.197873"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 18 Pago Informado-Banelco/link
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.596s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.229s
+    And En el combobox Canal selecciono 27 ... passed in 0.502s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.303s
+    And En el campo Tran Informada escribo 8904445566776 ... passed in 0.248s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.084s
+    And Limpio el campo Importe Pago con Del ... passed in 3.042s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.044s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.047s
+    And Hago clic en Boton Pago ... passed in 0.118s
+    And Hago clic en Confirma ... passed in 0.367s
+    And Espero 5 segundos ... passed in 5.006s
+    And Esperar que finalice la carga ... passed in 0.000s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.041s
+    And Escribo NroPagoCompPinf ... passed in 0.028s
+    And Capturo pantalla: Pago ... passed in 0.235s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.244s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tran Informada
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='Pago_PagoInformado_NroTransaccionTicket']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93929
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150343).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="19 Pago Informado-Tran SNP y MEP" status="passed" time="20.781117"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 19 Pago Informado-Tran SNP y MEP
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.606s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.214s
+    And En el combobox Canal selecciono 28 ... passed in 0.441s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.281s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.191s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.201s
+    And En el campo CBU_CPagador escribo 0270100010000012770011 ... passed in 0.209s
+    And En el campo Nro_Tran_pagador escribo 8904445566776 ... passed in 0.213s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.101s
+    And Limpio el campo Importe Pago con Del ... passed in 3.045s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.036s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.065s
+    And Hago clic en Boton Pago ... passed in 0.157s
+    And Hago clic en Confirma ... passed in 0.392s
+    And Espero 3 segundos ... passed in 3.003s
+    When Genera comprobante NroPagoCompPinf ... passed in 0.040s
+    And Escribo NroPagoCompPinf ... passed in 0.030s
+    And Capturo pantalla: Pago ... passed in 0.247s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.244s
+    Then cierro la app ... passed in 0.064s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento CBU_CPagador
+get_elements: //input[@id='Pago_PagoInformado_CbuPagador']
+get_elements: //input[@id='Pago_PagoInformado_CbuPagador']
+Esperar_Elemento: Se visualizo el elemento Nro_Tran_pagador
+get_elements: //input[@id='Pago_PagoInformado_NroTransferencia']
+get_elements: //input[@id='Pago_PagoInformado_NroTransferencia']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[6]//td[2]//b[1]
+Text Value : 93930
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoInfEch_(150403).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="20 Pago Supervielle" status="passed" time="19.361025"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 20 Pago Supervielle
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.743s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 29 ... passed in 0.221s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.100s
+    And Limpio el campo Importe Pago con Del ... passed in 3.044s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.039s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.046s
+    And Hago clic en Boton Pago ... passed in 0.246s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And Hago clic en Boton Generar Cupon ... passed in 0.275s
+    And Espero 3 segundos ... passed in 3.004s
+    And Escribo Comp_pf ... passed in 0.048s
+    And Escribo Nro Pago Sup ... passed in 0.037s
+    And Capturo pantalla: Pago ... passed in 0.240s
+    And Tomar Captura: CompPagoSup ... passed in 0.252s
+    Then cierro la app ... passed in 0.065s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tbody/tr[3]/td[3]/b[1]
+Text Value : 93931
+get_text: //tr[3]//td[3]//b[1]
+Text Value : 93931
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoSup_(150423).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="21 Tarjeta de Credito Visa" status="failed" time="38.078779"><error message="HTTPConnectionPool(host='127.0.0.1', port=40506): Max retries exceeded with url: /session/feb450ece5966428c5b0a9ffa8604946/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc5863048&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Juanito ... failed in 21.142s
+Location: features/Boton_Pago_Deudor.feature:507
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc5863048>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=40506): Max retries exceeded with url: /session/feb450ece5966428c5b0a9ffa8604946/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5863048>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5023128>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/feb450ece5966428c5b0a9ffa8604946/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc50387b8>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/feb450ece5966428c5b0a9ffa8604946/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5038710>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/feb450ece5966428c5b0a9ffa8604946/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 21 Tarjeta de Credito Visa
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 3.344s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.244s
+    And En el combobox Tarjetas selecciono 32 ... passed in 0.427s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.194s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.092s
+    And Limpio el campo Importe Pago con Del ... passed in 3.053s
+    And Limpio el campo Importe Pago con 9 ... passed in 3.045s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.040s
+    And Hago clic en Boton Pago ... passed in 0.120s
+    And Hago clic en Confirma ... passed in 0.377s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito ... failed in 21.142s
+    And En el campo Numero escribo 4507990000000010 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 032022 ... skipped in 0.000s
+    And En el campo Codigo seg escribo 123 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    When Genera comprobante Comp_TC ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Escribo Nro Pago Ing ... skipped in 0.000s
+    And Espero 3 segundos ... skipped in 0.000s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTCredito ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="22 Tarjeta de Credito Mastercard" status="failed" time="37.576101"><error message="HTTPConnectionPool(host='127.0.0.1', port=33715): Max retries exceeded with url: /session/0cab4932a49b7ffc7b2de0fc62314b1a/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc5023828&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Juanito ... failed in 21.159s
+Location: features/Boton_Pago_Deudor.feature:535
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc5023828>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=33715): Max retries exceeded with url: /session/0cab4932a49b7ffc7b2de0fc62314b1a/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5023828>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc50b7160>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/0cab4932a49b7ffc7b2de0fc62314b1a/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5023e80>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/0cab4932a49b7ffc7b2de0fc62314b1a/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5023518>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/0cab4932a49b7ffc7b2de0fc62314b1a/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 22 Tarjeta de Credito Mastercard
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.776s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.202s
+    And En el combobox Tarjetas selecciono 33 ... passed in 0.453s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.224s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.080s
+    And Limpio el campo Importe Pago con Del ... passed in 3.049s
+    And Limpio el campo Importe Pago con 9 ... passed in 3.048s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.058s
+    And Hago clic en Boton Pago ... passed in 0.124s
+    And Hago clic en Confirma ... passed in 0.401s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito ... failed in 21.159s
+    And En el campo Numero escribo 5323629991234563 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... skipped in 0.000s
+    And En el campo Codigo seg escribo 123 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    And Espero 30 segundos ... skipped in 0.000s
+    When Genera comprobante Comp_TC ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Espero 3 segundos ... skipped in 0.000s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTCredito ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="23 Tarjeta de Credito Amex" status="failed" time="37.590874"><error message="HTTPConnectionPool(host='127.0.0.1', port=36652): Max retries exceeded with url: /session/e1b4435c84b3320cb7c0bc71daa24d07/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc5038f28&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Juanito Laguna ... failed in 21.119s
+Location: features/Boton_Pago_Deudor.feature:564
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc5038f28>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=36652): Max retries exceeded with url: /session/e1b4435c84b3320cb7c0bc71daa24d07/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5038f28>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5037588>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/e1b4435c84b3320cb7c0bc71daa24d07/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5038e48>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/e1b4435c84b3320cb7c0bc71daa24d07/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc5038ac8>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/e1b4435c84b3320cb7c0bc71daa24d07/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 23 Tarjeta de Credito Amex
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.703s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.242s
+    And En el combobox Tarjetas selecciono 34 ... passed in 0.534s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.230s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.096s
+    And Limpio el campo Importe Pago con Del ... passed in 3.049s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.038s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.067s
+    And Hago clic en Boton Pago ... passed in 0.125s
+    And Hago clic en Confirma ... passed in 0.386s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito Laguna ... failed in 21.119s
+    And En el campo Numero escribo 376411234531007 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... skipped in 0.000s
+    And En el campo Codigo seg escribo 1234 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    When Genera comprobante Comp_TC ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Espero 3 segundos ... skipped in 0.000s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTCredito ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="24 Tarjeta de Credito Naranja" status="failed" time="37.733642"><error message="HTTPConnectionPool(host='127.0.0.1', port=42488): Max retries exceeded with url: /session/ef7f7e089df46bb914dce7cf631c541c/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc4fc3780&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Juanito Laguna ... failed in 21.129s
+Location: features/Boton_Pago_Deudor.feature:593
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc4fc3780>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=42488): Max retries exceeded with url: /session/ef7f7e089df46bb914dce7cf631c541c/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4fc3780>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc50cf710>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/ef7f7e089df46bb914dce7cf631c541c/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4fc36d8>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/ef7f7e089df46bb914dce7cf631c541c/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4fc37b8>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/ef7f7e089df46bb914dce7cf631c541c/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 24 Tarjeta de Credito Naranja
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.822s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.211s
+    And En el combobox Tarjetas selecciono 43 ... passed in 0.579s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.215s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.084s
+    And Limpio el campo Importe Pago con Del ... passed in 3.045s
+    And Limpio el campo Importe Pago con 9 ... passed in 3.041s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.066s
+    And Hago clic en Boton Pago ... passed in 0.129s
+    And Hago clic en Confirma ... passed in 0.411s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito Laguna ... failed in 21.129s
+    And En el campo Numero escribo 5895629000002025 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    When Genera comprobante Comp_TC ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Espero 3 segundos ... skipped in 0.000s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTCredito ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="25 Tarjeta de Credito Visa Naranja" status="failed" time="37.887585"><error message="HTTPConnectionPool(host='127.0.0.1', port=54282): Max retries exceeded with url: /session/c24d9e4009ca10f34c1f8767b95e8510/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc502db00&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Juanito ... failed in 21.152s
+Location: features/Boton_Pago_Deudor.feature:624
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc502db00>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=54282): Max retries exceeded with url: /session/c24d9e4009ca10f34c1f8767b95e8510/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc502db00>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc57fc160>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/c24d9e4009ca10f34c1f8767b95e8510/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc50376a0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/c24d9e4009ca10f34c1f8767b95e8510/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc50381d0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/c24d9e4009ca10f34c1f8767b95e8510/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 25 Tarjeta de Credito Visa Naranja
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 3.082s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.222s
+    And En el combobox Tarjetas selecciono 44 ... passed in 0.451s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.222s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.096s
+    And Limpio el campo Importe Pago con Del ... passed in 3.046s
+    And Limpio el campo Importe Pago con 1 ... passed in 3.050s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.065s
+    And Hago clic en Boton Pago ... passed in 0.131s
+    And Hago clic en Confirma ... passed in 0.371s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito ... failed in 21.152s
+    And En el campo Numero escribo 4507990000000010 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 032022 ... skipped in 0.000s
+    And En el campo Codigo seg escribo 123 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    When Genera comprobante Comp_TC ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Espero 3 segundos ... skipped in 0.000s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTCredito ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="26 Tarjeta de Credito Nevada" status="failed" time="37.452626"><error message="HTTPConnectionPool(host='127.0.0.1', port=51587): Max retries exceeded with url: /session/5c8841382bb1a753d88f3ac937ba5f80/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc4f5e208&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Charles Marx ... failed in 21.092s
+Location: features/Boton_Pago_Deudor.feature:655
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc4f5e208>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=51587): Max retries exceeded with url: /session/5c8841382bb1a753d88f3ac937ba5f80/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f5e208>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4fc3320>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/5c8841382bb1a753d88f3ac937ba5f80/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f5e518>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/5c8841382bb1a753d88f3ac937ba5f80/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f5e4e0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/5c8841382bb1a753d88f3ac937ba5f80/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 26 Tarjeta de Credito Nevada
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.721s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.206s
+    And En el combobox Tarjetas selecciono 45 ... passed in 0.406s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.246s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.096s
+    And Limpio el campo Importe Pago con Del ... passed in 3.056s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.039s
+    And Limpio el campo Importe Pago con 9 ... passed in 3.061s
+    And Hago clic en Boton Pago ... passed in 0.138s
+    And Hago clic en Confirma ... passed in 0.390s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Charles Marx ... failed in 21.092s
+    And En el campo Numero escribo 5043631200000001 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... skipped in 0.000s
+    And En el campo Codigo seg escribo 123 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    When Genera comprobante Comp_TC ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Espero 3 segundos ... skipped in 0.000s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTCredNev ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="27 Tarjeta de Debito Visa" status="failed" time="37.210738"><error message="HTTPConnectionPool(host='127.0.0.1', port=38830): Max retries exceeded with url: /session/8b736cbce47711e236b958b5744b358b/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc4f684a8&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Martin Heidegger ... failed in 21.117s
+Location: features/Boton_Pago_Deudor.feature:683
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc4f684a8>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=38830): Max retries exceeded with url: /session/8b736cbce47711e236b958b5744b358b/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f684a8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas Debito
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4fcd978>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/8b736cbce47711e236b958b5744b358b/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4fcd2b0>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/8b736cbce47711e236b958b5744b358b/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f68048>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/8b736cbce47711e236b958b5744b358b/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 27 Tarjeta de Debito Visa
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.653s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 39 ... passed in 0.224s
+    And En el combobox Tarjetas Debito selecciono 40 ... passed in 0.448s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.091s
+    And Limpio el campo Importe Pago con Del ... passed in 3.058s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.044s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.069s
+    And Hago clic en Boton Pago ... passed in 0.129s
+    And Hago clic en Boton Generar Cupon ... passed in 0.377s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... failed in 21.117s
+    And En el campo Numero escribo 4001020000000017 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... skipped in 0.000s
+    And En el campo Codigo seg escribo 123 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    And Espero 10 segundos ... skipped in 0.000s
+    When Genera comprobante Comp_TC ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Capturo pantalla: pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTDebVisa ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas Debito
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="28 Tarjeta de Debito Maestro" status="failed" time="37.249672"><error message="HTTPConnectionPool(host='127.0.0.1', port=39943): Max retries exceeded with url: /session/163aecdd1203490ce8c060023fa5b851/element (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7efcc4f68cc0&gt;: Failed to establish a new connection: [Errno 111] Connection refused',))" type="MaxRetryError">
+<![CDATA[
+Failing step: And En el campo Titular Tarjeta escribo Martin Heidegger ... failed in 21.129s
+Location: features/Boton_Pago_Deudor.feature:711
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7efcc4f68cc0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 43, in step_impl
+    Selenium.send_key_text(self, locator, text)
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 303, in send_key_text
+    Functions.get_elements(self, entity).clear()
+  File "/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/functions/Functions.py", line 202, in get_elements
+    elements = self.driver.find_element_by_xpath(self.json_ValueToFind)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/usr/local/lib/python3.6/dist-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/poolmanager.py", line 336, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 767, in urlopen
+    **response_kw
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.6/dist-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=39943): Max retries exceeded with url: /session/163aecdd1203490ce8c060023fa5b851/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f68cc0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas Debito
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+Captured logging:
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f5e780>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/163aecdd1203490ce8c060023fa5b851/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f68b38>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/163aecdd1203490ce8c060023fa5b851/element
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efcc4f68d68>: Failed to establish a new connection: [Errno 111] Connection refused',)': /session/163aecdd1203490ce8c060023fa5b851/element]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 28 Tarjeta de Debito Maestro
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.726s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.002s
+    And En el combobox Medio de Pago selecciono 39 ... passed in 0.236s
+    And En el combobox Tarjetas Debito selecciono 41 ... passed in 0.423s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.085s
+    And Limpio el campo Importe Pago con Del ... passed in 3.052s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.039s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.040s
+    And Hago clic en Boton Pago ... passed in 0.128s
+    And Hago clic en Boton Generar Cupon ... passed in 0.388s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... failed in 21.129s
+    And En el campo Numero escribo 5010150000000000010 ... skipped in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... skipped in 0.000s
+    And En el campo Codigo seg escribo 123 ... skipped in 0.000s
+    And Hago clic en Boton pago Ingenico ... skipped in 0.000s
+    And Esperar que finalice la carga ... skipped in 0.000s
+    And Espero 10 segundos ... skipped in 0.000s
+    When Valido campo Estado_Comp_Pago con Pagado ... skipped in 0.000s
+    And Escribo Comp_TC ... skipped in 0.000s
+    And Capturo pantalla: pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoTDebMae ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas Debito
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar_Elemento: No presente Titular Tarjeta
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="29 Pago Facil" status="passed" time="21.345708"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 29 Pago Facil
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.696s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 46 ... passed in 0.242s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.114s
+    And Limpio el campo Importe Pago con Del ... passed in 3.044s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.047s
+    And Limpio el campo Importe Pago con 9 ... passed in 3.039s
+    And Hago clic en Boton Pago ... passed in 0.126s
+    And Hago clic en Boton Generar Cupon ... passed in 0.404s
+    And Espero 5 segundos ... passed in 5.008s
+    When Genera comprobante Comp_pf ... passed in 0.046s
+    And Escribo Comp_pf ... passed in 0.029s
+    And Capturo pantalla: Deuda ... passed in 0.248s
+    And Tomar Captura: CompPagoPF ... passed in 0.238s
+    Then cierro la app ... passed in 0.065s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+get_text: //tbody/tr[3]/td[3]/b[1]
+Text Value : 93940
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoPF_(150945).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="30 Pago Redes Recaudacion-Pago Facil" status="passed" time="21.667572"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 30 Pago Redes Recaudacion-Pago Facil
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.734s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 31 ... passed in 0.217s
+    And En el combobox Medio Redes selecciono 35 ... passed in 0.308s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.096s
+    And Limpio el campo Importe Pago con Del ... passed in 3.047s
+    And Limpio el campo Importe Pago con 9 ... passed in 3.041s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.068s
+    And Hago clic en Boton Pago ... passed in 0.299s
+    And Hago clic en Confirma ... passed in 0.275s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And Espero 5 segundos ... passed in 5.004s
+    And Capturo pantalla: Pago ... passed in 0.279s
+    And Tomar Captura: CompPagoRRPF ... passed in 0.238s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Medio Redes
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoRRPF_(151007).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="31 Debin" status="passed" time="21.936681"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 31 Debin
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.695s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 38 ... passed in 0.227s
+    And En el campo CbuDebito escribo 0270100010000012770011 ... passed in 0.487s
+    And En el campo ReferenciaDebin escribo Prueba scrum 23 ... passed in 0.209s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.087s
+    And Limpio el campo Importe Pago con Del ... passed in 3.044s
+    And Limpio el campo Importe Pago con 3 ... passed in 3.048s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.045s
+    And Hago clic en Boton Pago ... passed in 0.242s
+    And Hago clic en Confirma ... passed in 0.286s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And Espero 5 segundos ... passed in 5.005s
+    And Capturo pantalla: Pago ... passed in 0.224s
+    And Tomar Captura: CompPagoDebin ... passed in 0.270s
+    Then cierro la app ... passed in 0.066s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento CbuDebito
+get_elements: //input[contains(@id,'CbuDebito')]
+get_elements: //input[contains(@id,'CbuDebito')]
+Esperar_Elemento: Se visualizo el elemento ReferenciaDebin
+get_elements: //input[contains(@id,'Pago_PagoDebin_ReferenciaDebin')]
+get_elements: //input[contains(@id,'Pago_PagoDebin_ReferenciaDebin')]
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoDebin_(151028).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="Deprecated Pago Redes Recaudacion-RapiPago" status="passed" time="21.630857"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @deprecated
+  Scenario: Deprecated Pago Redes Recaudacion-RapiPago
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.744s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 31 ... passed in 0.224s
+    And En el combobox Medio Redes selecciono 36 ... passed in 0.316s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.096s
+    And Limpio el campo Importe Pago con Del ... passed in 3.052s
+    And Limpio el campo Importe Pago con 1 ... passed in 3.044s
+    And Limpio el campo Importe Pago con 0 ... passed in 3.064s
+    And Hago clic en Boton Pago ... passed in 0.134s
+    And Hago clic en Confirma ... passed in 0.407s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And Espero 5 segundos ... passed in 5.006s
+    And Capturo pantalla: Pago ... passed in 0.250s
+    And Tomar Captura: CompPagoRRRP ... passed in 0.232s
+    Then cierro la app ... passed in 0.062s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Medio Redes
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+/builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/data/capturas/02-11-2020/CHROME/145710//CompPagoRRRP_(151050).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual" name="Deprecated Pago Redes Recaudacion Provincia" status="failed" time="20.148172"><error message="'NoneType' object has no attribute 'click'" type="AttributeError">
+<![CDATA[
+Failing step: And Hago clic en Btn_Cupon_Pagos ... failed in 10.105s
+Location: features/Boton_Pago_Deudor.feature:831
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/dist-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/Steps.py", line 90, in step_impl
+    Selenium.get_elements(self, locator).click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Medio Redes
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+get_text: No se encontró el elemento: //button[@id='cash_payment_action_return']
+Se cerrará  el DRIVER]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @deprecated
+  Scenario: Deprecated Pago Redes Recaudacion Provincia
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?N8huj9qZunpkMt30aRlSfw%3d%3d ... passed in 2.678s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 31 ... passed in 0.228s
+    And En el combobox Medio Redes selecciono 37 ... passed in 0.347s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.113s
+    And Limpio el campo Importe Pago con Del ... passed in 3.047s
+    And En el campo Importe Pago escribo 15 ... passed in 0.228s
+    And Hago clic en Boton Pago ... passed in 0.144s
+    And Hago clic en Confirma ... passed in 0.258s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And Hago clic en Btn_Cupon_Pagos ... failed in 10.105s
+    And Capturo pantalla: Pago ... skipped in 0.000s
+    And Tomar Captura: CompPagoRRProv ... skipped in 0.000s
+    Then cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src
+----------------
+CHROME
+---------------
+get_json_file: /builds/desarrollo/recaudaciones/automatizacion_pruebas_recaudaciones/src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Medio Redes
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+get_text: No se encontró el elemento: //button[@id='cash_payment_action_return']
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase></testsuite>

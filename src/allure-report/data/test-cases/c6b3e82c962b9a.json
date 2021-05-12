@@ -1,0 +1,296 @@
+{
+  "uid" : "c6b3e82c962b9a",
+  "name" : "31 Debin",
+  "historyId" : "9b4598e2b22c37935c2b43aab4046c1f",
+  "time" : {
+    "start" : 1602793371050,
+    "stop" : 1602793371055,
+    "duration" : 5
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?pDfUlwUotWdfOju7hqn4YzyuRezUotAgY8BsmwE8rJg%3d",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Cargo el DOM de la App: recaudaciones",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And En el combobox Medio de Pago selecciono 38",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And En el campo CbuDebito escribo 0270100010000012770011",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And En el campo ReferenciaDebin escribo Prueba scrum 23",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Limpio el campo Importe Pago con Ctrl",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Limpio el campo Importe Pago con Del",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And En el campo Importe Pago escribo 15",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Hago clic en Boton Pago",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Hago clic en Confirma",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Esperar que finalice la carga",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Espero 5 segundos",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Capturo pantalla: Pago",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Tomar Captura: CompPagoDebin",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then cierro la app",
+      "time" : {
+        "start" : 1602793371055,
+        "stop" : 1602793371055,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 15
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "allure"
+  }, {
+    "name" : "feature",
+    "value" : "Pago deuda manual"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cc0ef0061ad8c712",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602793310354,
+        "stop" : 1602793310357,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "242fd669e406e233",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1602772751916,
+        "stop" : 1602772751926,
+        "duration" : 10
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "allure" ]
+  },
+  "source" : "c6b3e82c962b9a.json",
+  "parameterValues" : [ ]
+}

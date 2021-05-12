@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'click'\n",
+      "children" : [ {
+        "name" : "29 Pago Facil",
+        "uid" : "1d3c5ac464564952",
+        "parentUid" : "236448126aacc0a8c4031abbf275e96d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1612454333977,
+          "stop" : 1612454365220,
+          "duration" : 31243
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "236448126aacc0a8c4031abbf275e96d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

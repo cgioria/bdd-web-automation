@@ -1,0 +1,536 @@
+<testsuite name="Pagos_manual_secuencia.Pago deuda manual" tests="9" errors="0" failures="0" skipped="0" time="233.835024" timestamp="2020-09-15T12:41:15.171049" hostname="LAPTOP-M6V5B5N7"><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="1 Debito directo pago total" status="passed" time="42.627471"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 1 Debito directo pago total
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 11.585s
+    And Cargo el DOM de la App: obe ... passed in 0.233s
+    And Esperar que finalice la carga ... passed in 0.006s
+    And En el combobox Medio de Pago selecciono 2 ... passed in 0.725s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.298s
+    And Limpio el campo Importe Pago con Del ... passed in 3.051s
+    And En el campo Importe Pago escribo 156 ... passed in 0.162s
+    And En el campo CBU escribo 0270100010000012770011 ... passed in 0.395s
+    And Hago clic en Boton Pago ... passed in 0.145s
+    And Espero 10 segundos ... passed in 10.004s
+    And Hago clic en Boton Generar Cupon ... passed in 0.121s
+    And Espero 10 segundos ... passed in 10.005s
+    And Escribo Nro Pago Sup ... passed in 0.058s
+    And Capturo pantalla: Pago ... passed in 0.299s
+    And Tomar Captura: CompPagoDebDir ... passed in 0.284s
+    Then cierro la app ... passed in 2.256s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento CBU
+get_elements: //input[@id='CbuEmpresaOrdenante']
+get_elements: //input[@id='CbuEmpresaOrdenante']
+get_elements: //input[@id='btnPagar']
+Esperar: Inicia (10)
+Esperar: Carga Finalizada ... 
+get_elements: //button[@class='btn btn btn-success btn-xs']
+Esperar: Inicia (10)
+Esperar: Carga Finalizada ... 
+get_text: //tr[3]//td[3]//b[1]
+Text Value : Transacción:
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoDebDir_(123800).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="2 Pago Informado ECHEQ" status="passed" time="24.960476"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 2 Pago Informado ECHEQ
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 6.516s
+    And Cargo el DOM de la App: obe ... passed in 0.004s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 3 ... passed in 0.561s
+    And En el combobox Canal selecciono 42 ... passed in 0.517s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.110s
+    And Limpio el campo Importe Pago con Del ... passed in 3.047s
+    And En el campo Importe Pago escribo 56 ... passed in 0.475s
+    And En el campo Fecha Informada escribo 24/08/2020 ... passed in 0.526s
+    And En el campo Ref Informada escribo XXXXXXXX ... passed in 0.277s
+    And En el campo Echeq nro escribo 456789098765 ... passed in 0.265s
+    And En el campo Banco nro escribo 3456 ... passed in 0.482s
+    And En el combobox Tipodoc pag selecciono 26 ... passed in 0.227s
+    And En el campo Doc pag escribo 23456987 ... passed in 0.332s
+    And Hago clic en Boton Pago ... passed in 0.396s
+    And Hago clic en Confirma ... passed in 0.301s
+    And Espero 5 segundos ... passed in 5.003s
+    And Capturo pantalla: Pago ... passed in 0.248s
+    And Tomar Captura: CompPagoInfEch ... passed in 0.312s
+    Then cierro la app ... passed in 2.359s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Canal
+get_select_elements: //select[@id='PagoInformado_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Fecha Informada
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+get_elements: //input[@id='Pago_PagoInformado_FechaInformada']
+Esperar_Elemento: Se visualizo el elemento Ref Informada
+get_elements: //input[@id='Pago_PagoInformado_Referencia']
+get_elements: //input[@id='Pago_PagoInformado_Referencia']
+Esperar_Elemento: Se visualizo el elemento Echeq nro
+get_elements: //input[@id='Pago_PagoInformado_EcheqNro']
+get_elements: //input[@id='Pago_PagoInformado_EcheqNro']
+Esperar_Elemento: Se visualizo el elemento Banco nro
+get_elements: //input[@id='Pago_PagoInformado_BancoNro']
+get_elements: //input[@id='Pago_PagoInformado_BancoNro']
+Esperar_Elemento: Se visualizo el elemento Tipodoc pag
+get_select_elements: //select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']
+Esperar_Elemento: Se visualizo el elemento Doc pag
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='Pago_PagoInformado_NroDocumentoPagador']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoInfEch_(123825).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="3 Pago Supervielle" status="passed" time="17.581858"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 3 Pago Supervielle
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 7.312s
+    And Cargo el DOM de la App: obe ... passed in 0.004s
+    And Esperar que finalice la carga ... passed in 0.002s
+    And En el combobox Medio de Pago selecciono 29 ... passed in 0.563s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.123s
+    And Limpio el campo Importe Pago con Del ... passed in 3.052s
+    And En el campo Importe Pago escribo 34 ... passed in 0.152s
+    And Hago clic en Boton Pago ... passed in 0.172s
+    And Esperar que finalice la carga ... passed in 0.003s
+    And Hago clic en Boton Generar Cupon ... passed in 0.406s
+    And Capturo pantalla: Pago ... passed in 0.296s
+    And Tomar Captura: CompPagoSup ... passed in 0.280s
+    Then cierro la app ... passed in 2.217s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[@class='btn btn btn-success btn-xs']
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoSup_(123843).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="4.1 Tarjeta de Credito Visa" status="passed" time="27.270609"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 4.1 Tarjeta de Credito Visa
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 6.873s
+    And Cargo el DOM de la App: obe ... passed in 0.002s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.569s
+    And En el combobox Tarjetas selecciono 32 ... passed in 0.488s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.731s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.173s
+    And Limpio el campo Importe Pago con Del ... passed in 3.150s
+    And En el campo Importe Pago escribo 67 ... passed in 0.155s
+    And Hago clic en Boton Pago ... passed in 0.154s
+    And Hago clic en Confirma ... passed in 0.498s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And En el campo Titular Tarjeta escribo Juanito ... passed in 4.162s
+    And En el campo Numero escribo 4507990000000010 ... passed in 0.364s
+    And En el campo Fecha Ven escribo 032022 ... passed in 0.382s
+    And En el campo Codigo seg escribo 123 ... passed in 0.249s
+    And Hago clic en Boton pago Ingenico ... passed in 0.131s
+    And Esperar que finalice la carga ... passed in 0.002s
+    And Espero 3 segundos ... passed in 3.044s
+    And Capturo pantalla: Pago ... passed in 0.580s
+    And Tomar Captura: CompPagoTCredito ... passed in 0.317s
+    Then cierro la app ... passed in 2.245s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: Se visualizo el elemento Titular Tarjeta
+get_elements: //input[@id='card_holder_name_0']
+get_elements: //input[@id='card_holder_name_0']
+Esperar_Elemento: Se visualizo el elemento Numero
+get_elements: //input[@id='card_number_0']
+get_elements: //input[@id='card_number_0']
+Esperar_Elemento: Se visualizo el elemento Fecha Ven
+get_elements: //input[@id='card_expiration_date_0']
+get_elements: //input[@id='card_expiration_date_0']
+Esperar_Elemento: Se visualizo el elemento Codigo seg
+get_elements: //input[@id='card_security_code_0']
+get_elements: //input[@id='card_security_code_0']
+get_elements: //button[@id='credit_card_payment_action_pay']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoTCredito_(123910).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="4.6 Tarjeta de Credito Nevada" status="passed" time="28.714327"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 4.6 Tarjeta de Credito Nevada
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 7.045s
+    And Cargo el DOM de la App: obe ... passed in 0.004s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 30 ... passed in 0.747s
+    And En el combobox Tarjetas selecciono 45 ... passed in 0.476s
+    And En el combobox Cuotas selecciono 2 ... passed in 0.701s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.106s
+    And Limpio el campo Importe Pago con Del ... passed in 3.088s
+    And En el campo Importe Pago escribo 12 ... passed in 0.193s
+    And Hago clic en Boton Pago ... passed in 0.188s
+    And Hago clic en Confirma ... passed in 0.428s
+    And Esperar que finalice la carga ... passed in 0.002s
+    And En el campo Titular Tarjeta escribo Charles Marx ... passed in 1.509s
+    And En el campo Numero escribo 5043631200000001 ... passed in 0.268s
+    And En el campo Fecha Ven escribo 122023 ... passed in 0.305s
+    And En el campo Codigo seg escribo 123 ... passed in 0.216s
+    And Hago clic en Boton pago Ingenico ... passed in 0.108s
+    And Esperar que finalice la carga ... passed in 0.003s
+    And Escribo Nro Pago Ing ... passed in 3.544s
+    And Espero 3 segundos ... passed in 3.005s
+    And Capturo pantalla: Pago ... passed in 0.241s
+    And Tomar Captura: CompPagoTCredNev ... passed in 0.255s
+    Then cierro la app ... passed in 3.281s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+Esperar_Elemento: Se visualizo el elemento Cuotas
+get_select_elements: //select[@id='PagoNps_CantidadDeCuotas']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar_Elemento: Se visualizo el elemento Titular Tarjeta
+get_elements: //input[@id='card_holder_name_0']
+get_elements: //input[@id='card_holder_name_0']
+Esperar_Elemento: Se visualizo el elemento Numero
+get_elements: //input[@id='card_number_0']
+get_elements: //input[@id='card_number_0']
+Esperar_Elemento: Se visualizo el elemento Fecha Ven
+get_elements: //input[@id='card_expiration_date_0']
+get_elements: //input[@id='card_expiration_date_0']
+Esperar_Elemento: Se visualizo el elemento Codigo seg
+get_elements: //input[@id='card_security_code_0']
+get_elements: //input[@id='card_security_code_0']
+get_elements: //button[@id='credit_card_payment_action_pay']
+get_text: //tr[5]//td[2]//b[1]
+Text Value : 
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoTCredNev_(123938).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="5 Pago Redes Recaudacion Provincia" status="passed" time="21.192235"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 5 Pago Redes Recaudacion Provincia
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 7.109s
+    And Cargo el DOM de la App: obe ... passed in 0.003s
+    And Esperar que finalice la carga ... passed in 0.002s
+    And En el combobox Medio de Pago selecciono 31 ... passed in 0.912s
+    And En el combobox Medio Redes selecciono 37 ... passed in 0.343s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.140s
+    And Limpio el campo Importe Pago con Del ... passed in 3.046s
+    And En el campo Importe Pago escribo 15 ... passed in 0.156s
+    And Hago clic en Boton Pago ... passed in 0.189s
+    And Hago clic en Confirma ... passed in 0.442s
+    And Esperar que finalice la carga ... passed in 0.002s
+    And Espero 3 segundos ... passed in 3.003s
+    And Capturo pantalla: Pago ... passed in 0.276s
+    And Tomar Captura: CompPagoRRProv ... passed in 0.301s
+    Then cierro la app ... passed in 2.269s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Medio Redes
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[contains(.,'Aceptar')]
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoRRProv_(124000).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="7.1 Tarjeta de Debito Visa" status="passed" time="25.888173"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 7.1 Tarjeta de Debito Visa
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 6.438s
+    And Cargo el DOM de la App: obe ... passed in 0.003s
+    And Esperar que finalice la carga ... passed in 0.002s
+    And En el combobox Medio de Pago selecciono 39 ... passed in 0.515s
+    And En el combobox Tarjetas Debito selecciono 40 ... passed in 0.446s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.125s
+    And Limpio el campo Importe Pago con Del ... passed in 3.047s
+    And En el campo Importe Pago escribo 17 ... passed in 0.151s
+    And Hago clic en Boton Pago ... passed in 0.186s
+    And Hago clic en Boton Generar Cupon ... passed in 0.766s
+    And Esperar que finalice la carga ... passed in 0.007s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... passed in 1.893s
+    And En el campo Numero escribo 4001020000000017 ... passed in 0.337s
+    And En el campo Fecha Ven escribo 122023 ... passed in 0.388s
+    And En el campo Codigo seg escribo 123 ... passed in 0.213s
+    And Hago clic en Boton pago Ingenico ... passed in 0.138s
+    And Esperar que finalice la carga ... passed in 0.002s
+    And Espero 3 segundos ... passed in 3.005s
+    And Capturo pantalla: pago ... passed in 1.488s
+    And Tomar Captura: CompPagoTDebVisa ... passed in 0.303s
+    Then cierro la app ... passed in 3.436s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas Debito
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[@class='btn btn btn-success btn-xs']
+Esperar_Elemento: Se visualizo el elemento Titular Tarjeta
+get_elements: //input[@id='card_holder_name_0']
+get_elements: //input[@id='card_holder_name_0']
+Esperar_Elemento: Se visualizo el elemento Numero
+get_elements: //input[@id='card_number_0']
+get_elements: //input[@id='card_number_0']
+Esperar_Elemento: Se visualizo el elemento Fecha Ven
+get_elements: //input[@id='card_expiration_date_0']
+get_elements: //input[@id='card_expiration_date_0']
+Esperar_Elemento: Se visualizo el elemento Codigo seg
+get_elements: //input[@id='card_security_code_0']
+get_elements: //input[@id='card_security_code_0']
+get_elements: //button[@id='credit_card_payment_action_pay']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoTDebVisa_(124025).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="7.2 Tarjeta de Debito Maestro" status="passed" time="25.167397"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 7.2 Tarjeta de Debito Maestro
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 7.453s
+    And Cargo el DOM de la App: obe ... passed in 0.004s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 39 ... passed in 0.545s
+    And En el combobox Tarjetas Debito selecciono 41 ... passed in 0.472s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.106s
+    And Limpio el campo Importe Pago con Del ... passed in 3.046s
+    And En el campo Importe Pago escribo 19 ... passed in 0.147s
+    And Hago clic en Boton Pago ... passed in 0.209s
+    And Hago clic en Boton Generar Cupon ... passed in 0.425s
+    And Esperar que finalice la carga ... passed in 0.003s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... passed in 2.261s
+    And En el campo Numero escribo 4001020000000017 ... passed in 0.642s
+    And En el campo Fecha Ven escribo 122023 ... passed in 0.260s
+    And En el campo Codigo seg escribo 123 ... passed in 0.218s
+    And Hago clic en Boton pago Ingenico ... passed in 0.415s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And Espero 3 segundos ... passed in 3.099s
+    And Capturo pantalla: pago ... passed in 0.282s
+    And Tomar Captura: CompPagoTDebMae ... passed in 0.297s
+    Then cierro la app ... passed in 2.280s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+Esperar_Elemento: Se visualizo el elemento Tarjetas Debito
+get_select_elements: //select[@id='PagoNPS_MedioPago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[@class='btn btn btn-success btn-xs']
+Esperar_Elemento: Se visualizo el elemento Titular Tarjeta
+get_elements: //input[@id='card_holder_name_0']
+get_elements: //input[@id='card_holder_name_0']
+Esperar_Elemento: Se visualizo el elemento Numero
+get_elements: //input[@id='card_number_0']
+get_elements: //input[@id='card_number_0']
+Esperar_Elemento: Se visualizo el elemento Fecha Ven
+get_elements: //input[@id='card_expiration_date_0']
+get_elements: //input[@id='card_expiration_date_0']
+Esperar_Elemento: Se visualizo el elemento Codigo seg
+get_elements: //input[@id='card_security_code_0']
+get_elements: //input[@id='card_security_code_0']
+get_elements: //button[@id='credit_card_payment_action_pay']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoTDebMae_(124052).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Pagos_manual_secuencia.Pago deuda manual" name="9 Pago Facil" status="passed" time="20.432477"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 9 Pago Facil
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?reQ3pav5VOjYouoYu2PUU%2f%2fTMT0Qmy2AcV2q1Ns01fw%3d ... passed in 7.191s
+    And Cargo el DOM de la App: obe ... passed in 0.003s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And En el combobox Medio de Pago selecciono 46 ... passed in 0.494s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.114s
+    And Limpio el campo Importe Pago con Del ... passed in 3.049s
+    And En el campo Importe Pago escribo 21 ... passed in 0.154s
+    And Hago clic en Boton Pago ... passed in 0.187s
+    And Hago clic en Boton Generar Cupon ... passed in 0.436s
+    And Espero 3 segundos ... passed in 3.003s
+    And Capturo pantalla: Deuda ... passed in 0.244s
+    And Tomar Captura: CompPagoPF ... passed in 0.269s
+    Then cierro la app ... passed in 2.288s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Proyectos\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Proyectos\Supervielle\Recaudaciones\src/pages/obe.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[@class='btn btn btn-success btn-xs']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+C:\Proyectos\Supervielle\Recaudaciones\src/data/capturas/15-09-2020/CHROME/123720//CompPagoPF_(124112).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase></testsuite>

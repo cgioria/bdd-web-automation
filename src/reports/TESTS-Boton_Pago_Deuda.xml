@@ -1,0 +1,102 @@
+<testsuite name="Boton_Pago_Deuda.Pago deuda manual modalidad de pago abierta 1" tests="2" errors="0" failures="0" skipped="0" time="51.788313" timestamp="2021-02-04T12:53:59.948931" hostname="LAPTOP-6J6TU9UN"><testcase classname="Boton_Pago_Deuda.Pago deuda manual modalidad de pago abierta 1" name="2 Debito directo pago parcial" status="passed" time="24.676304"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @s27
+  Scenario: 2 Debito directo pago parcial
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?mq1iTpRmPOZaBd6FyUYUg%2bUK6ArGYIKenl5hjc%2fm4tg%3d ... passed in 10.985s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.032s
+    And En el combobox Medio de Pago selecciono 2 ... passed in 0.483s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.091s
+    And Limpio el campo Importe Pago con Del ... passed in 3.111s
+    And En el campo Importe Pago escribo 23 ... passed in 0.109s
+    And En el campo CBU escribo 0270100010000012770011 ... passed in 0.202s
+    And Hago clic en Boton Pago ... passed in 0.102s
+    And Hago clic en Boton Generar Cupon ... passed in 0.649s
+    And Espero 3 segundos ... passed in 3.046s
+    When Genera comprobante NroPagoComp ... passed in 0.056s
+    And Escribo NroPagoComp ... passed in 0.023s
+    And Capturo pantalla: Pago ... passed in 0.320s
+    And Tomar Captura: CompPagoDebDir ... passed in 0.292s
+    Then cierro la app ... passed in 2.175s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento CBU
+get_elements: //input[@id='CbuEmpresaOrdenante']
+get_elements: //input[@id='CbuEmpresaOrdenante']
+get_elements: //input[@id='btnPagar']
+get_elements: //button[text()='Aceptar']
+Esperar: Inicia (3)
+Esperar: Carga Finalizada ... 
+get_text: //tr[8]//td[2]//b[1]
+Text Value : 195158
+C:\Supervielle\Recaudaciones\src/data/capturas/04-02-2021/CHROME/125307//CompPagoDebDir_(125330).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deuda.Pago deuda manual modalidad de pago abierta 1" name="29 Pago Facil" status="passed" time="27.112009"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @s27
+  Scenario: 29 Pago Facil
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?mq1iTpRmPOZaBd6FyUYUg%2bUK6ArGYIKenl5hjc%2fm4tg%3d ... passed in 6.774s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.002s
+    And En el combobox Medio de Pago selecciono 46 ... passed in 0.655s
+    And Limpio el campo Importe Pago con Ctrl ... passed in 3.132s
+    And Limpio el campo Importe Pago con Del ... passed in 3.080s
+    And En el campo Importe Pago escribo 21 ... passed in 0.117s
+    And Hago clic en Boton Pago ... passed in 0.187s
+    And Espero 5 segundos ... passed in 5.052s
+    And Hago clic en Boton Generar Cupon ... passed in 0.130s
+    And Espero 5 segundos ... passed in 5.039s
+    When Genera comprobante Comp_pf ... passed in 0.091s
+    And Escribo Comp_pf ... passed in 0.033s
+    And Capturo pantalla: Deuda ... passed in 0.324s
+    And Tomar Captura: CompPagoPF ... passed in 0.328s
+    Then cierro la app ... passed in 2.168s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Medio de Pago
+get_select_elements: //select[@id='ddlMedioDePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+Esperar_Elemento: Se visualizo el elemento Importe Pago
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='ImportePago']
+get_elements: //input[@id='btnPagar']
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+get_elements: //button[text()='Aceptar']
+Esperar: Inicia (5)
+Esperar: Carga Finalizada ... 
+get_text: //tbody/tr[3]/td[3]/b[1]
+Text Value : 195159
+C:\Supervielle\Recaudaciones\src/data/capturas/04-02-2021/CHROME/125307//CompPagoPF_(125357).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase></testsuite>

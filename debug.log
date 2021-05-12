@@ -1,0 +1,68 @@
+[0904/122246.082:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0904/141311.553:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0904/172250.350:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0904/204515.294:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0904/220454.826:ERROR:file_io_win.cc(162)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir14752_2055257409\Crashpad\settings.dat: El sistema no puede encontrar la ruta especificada. (0x3)
+[0904/220454.927:ERROR:file_io_win.cc(171)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir14752_2055257409\Crashpad\reports\6ed3d253-e406-4f4a-861c-1b13a867c646.dmp: El sistema no puede encontrar la ruta especificada. (0x3)
+[0904/220454.928:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0904/224219.820:ERROR:file_io_win.cc(162)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir8620_27290079\Crashpad\settings.dat: El sistema no puede encontrar la ruta especificada. (0x3)
+[0904/224219.832:ERROR:file_io_win.cc(171)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir8620_27290079\Crashpad\reports\5948e48b-d754-4a5a-9491-f54fb0582e05.dmp: El sistema no puede encontrar la ruta especificada. (0x3)
+[0904/224219.832:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0907/093718.228:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/095249.293:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/095502.058:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/123023.905:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/185402.866:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/200723.799:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/200911.700:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/225702.341:ERROR:file_io_win.cc(162)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir5092_2010058697\Crashpad\settings.dat: El sistema no puede encontrar la ruta especificada. (0x3)
+[0907/225702.427:ERROR:file_io_win.cc(171)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir5092_2010058697\Crashpad\reports\cf259394-3329-47d6-9159-0027825ba1d1.dmp: El sistema no puede encontrar la ruta especificada. (0x3)
+[0907/225702.427:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0908/002013.667:ERROR:file_io_win.cc(162)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir1052_1465022877\Crashpad\settings.dat: El sistema no puede encontrar la ruta especificada. (0x3)
+[0908/002013.672:ERROR:file_io_win.cc(171)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir1052_1465022877\Crashpad\reports\0f469b00-03b3-426e-99b6-45a753ea8f49.dmp: El sistema no puede encontrar la ruta especificada. (0x3)
+[0908/002013.680:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0908/102436.843:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/115353.093:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/152131.852:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/163616.571:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/163822.571:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/170540.037:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/172636.991:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/192424.486:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/215817.258:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/055513.061:ERROR:file_io_win.cc(162)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir8636_239257519\Crashpad\settings.dat: El sistema no puede encontrar la ruta especificada. (0x3)
+[0909/055513.092:ERROR:file_io_win.cc(171)] CreateFile C:\Users\DINAMI~1\AppData\Local\Temp\scoped_dir8636_239257519\Crashpad\reports\fbc1ea72-0acd-4541-889a-6a5d7cc3fc2e.dmp: El sistema no puede encontrar la ruta especificada. (0x3)
+[0909/055513.092:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0909/092848.335:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/093922.443:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/134831.885:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/135009.672:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/164055.483:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/191359.367:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0910/125408.540:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0910/184059.206:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0910/193928.372:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0910/200121.639:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0910/224658.413:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0921/105037.945:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0921/105206.899:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0921/145200.014:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0921/145532.667:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0921/165702.195:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0924/124153.420:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0924/124301.232:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0924/125500.950:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0924/130421.325:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0925/102747.812:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0928/142303.028:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0928/142533.459:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0930/113520.494:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0930/130729.155:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1001/084824.643:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1002/100840.983:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1008/160147.487:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1009/185309.458:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1009/185309.460:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1009/190344.868:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1009/190344.869:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1023/134524.238:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)

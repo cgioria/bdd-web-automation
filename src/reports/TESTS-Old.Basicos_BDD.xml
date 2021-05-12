@@ -1,0 +1,115 @@
+<testsuite name="Old.Basicos_BDD.Funciones basicas de selenium con BDD" tests="8" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.945107" hostname="LAPTOP-6J6TU9UN"><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="Abrir el navegador" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Navegador
+  Scenario: Abrir el navegador
+    Given Abrir la aplicacion ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="Abrir url" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Navegador
+  Scenario: Abrir url
+    Given Inicializo la app en la URL https://www.toolsqa.com/cucumber/behavior-driven-development/ ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="Abrir con Navegador" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Navegador
+  Scenario: Abrir con Navegador
+    Given Abro la app con el navegador FIREFOX ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="Setear el DOM y trabajar con el" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @FuncionesSelenium @DOM
+  Scenario: Setear el DOM y trabajar con el
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: Spotify_registro ... untested in 0.000s
+    And En el campo Email escribo mervindiazlugo@gmail.com ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="Tomar capturas de pantalla" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Capturas
+  Scenario: Tomar capturas de pantalla
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: Spotify_registro ... untested in 0.000s
+    And En el campo Email escribo mervindiazlugo@gmail.com ... untested in 0.000s
+    And Capturo pantalla: EmailSpoty ... untested in 0.000s
+    And Tomar Captura: Test003 ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="Dropdowns y textbox" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @TextyDrop
+  Scenario: Dropdowns y textbox
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: Spotify_registro ... untested in 0.000s
+    And En el campo Email escribo mervindiazlugo@gmail.com ... untested in 0.000s
+    And En el dropdown Mes de Nacimiento selecciono febrero ... untested in 0.000s
+    And En el combobox Mes de Nacimiento selecciono 03 ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="clics Frames y Ventanas" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: clics Frames y Ventanas
+    Given Inicilizo la app en la URL https://chercher.tech/practice/frames-example-selenium-webdriver ... untested in 0.000s
+    And Cargo el DOM de la App: frames ... untested in 0.000s
+    And Me desplazo al frame: Frame2 ... untested in 0.000s
+    And En el dropdown Frame2 Select selecciono Avatar ... untested in 0.000s
+    And Vuelvo al frame padre ... untested in 0.000s
+    And Me desplazo al frame: Frame1 ... untested in 0.000s
+    And En el campo Frame1 input escribo Hola Chicos de Udemy ... untested in 0.000s
+    And Me desplazo al frame: Frame3 ... untested in 0.000s
+    And Hago clic en Frame3 input ... untested in 0.000s
+    And Tomar Captura: Test005 ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Old.Basicos_BDD.Funciones basicas de selenium con BDD" name="Buscar por texto scroll y waits" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Buscar por texto scroll y waits
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: Spotify_registro ... untested in 0.000s
+    Then Hago scroll hacia el elemento: Already ... untested in 0.000s
+    And Cliqueo en Texto: Iniciar ses ... untested in 0.000s
+    And Espero 8 segundos ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

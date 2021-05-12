@@ -1,0 +1,683 @@
+{
+  "Email Confirmacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='signup_form[confirm_email]']"
+  },
+
+  "Pass": {
+    "GetFieldBy": "id",
+    "ValueToFind": "register-password"
+  },
+
+  "Identificacion": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'identification')]"
+  },
+
+   "Password": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'password')]"
+  },
+
+     "Boton Ingresar": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[contains(@id,'btn_ingresar')]"
+  },
+
+     "Boton Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//a[@href='#'][contains(.,'Cobros')]"
+  },
+
+    "Boton Manual": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "(//a[@class='ember-view'][contains(.,'Manual')])[3]"
+  },
+    "Selecciona Empresa": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//small[@id='empresa-seleccionada-nombre']"
+  },
+    "Selecciona Vademecum": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//li[@data-option-index=0]"
+  },
+    "Convenio Honorarios": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[text()='35448 - Convenio Matrículas']"
+  },
+     "Descripcion": {
+     "GetFieldBy": "xpath",
+     "ValueToFind": "//input[@id='descripcion']"
+
+   },
+     "Combo Convenio": {
+     "GetFieldBy": "xpath",
+     "ValueToFind": "//div[@id='ember1455']"
+
+   },
+     "Combo Expensas": {
+     "GetFieldBy": "xpath",
+     "ValueToFind": "//span[text()='2308833 - Expensas']"
+
+
+
+  },
+     "Importe": {
+     "GetFieldBy": "xpath",
+     "ValueToFind": "//input[contains(@id,'importe')]"
+
+  },
+     "Importe BP": {
+      "GetFieldBy": "xpath",
+      "ValueToFind": "//input[contains(@id,'ImportePago')]"
+
+  },
+     "Boton Publicar": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[@type='button'][contains(.,'Publicar')]"
+  },
+     "Numero Documento": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'numeroDocumentoPagador')]"
+  },
+     "Nombre Pagador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'nombrePagador')]"
+  },
+     "Email": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@type,'email')]"
+  },
+     "Medio de Pago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='ddlMedioDePago']"
+
+
+    },
+     "Medio Multi Pago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@class='form-control input-validation-error']"
+
+
+
+  },
+     "Boton Pago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='btnPagar']"
+
+
+   },
+     "Boton Pago2": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@class='btn btn-success btn-xs btn-pagar']"
+
+  },
+     "CBU": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='CbuEmpresaOrdenante']"
+  },
+     "Confirma": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[contains(.,'Aceptar')]"
+  },
+     "Tarjetas": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='PagoNPS_MedioPago']"
+  },
+     "Cuotas": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='PagoNps_CantidadDeCuotas']"
+  },
+     "Referencia": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoNPS_Referencia']"
+  },
+     "Titular Tarjeta": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='card_holder_name_0']"
+  },
+     "Numero": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='card_number_0']"
+  },
+     "Fecha Ven": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='card_expiration_date_0']"
+  },
+     "Codigo seg": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='card_security_code_0']"
+  },
+     "Boton pago Ingenico": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[@id='credit_card_payment_action_pay']"
+  } ,
+     "Boton Generar Cupon": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[text()='Aceptar']"
+
+
+  },
+     "Tarjetas Debito": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='PagoNPS_MedioPago']"
+  },
+     "Confirma DD": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[contains(@data-bb-handler,'confirm')]"
+  },
+     "Link Pago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@id='link-de-pago']"
+  },
+     "Canal": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='PagoInformado_MedioPago']"
+  },
+     "Fecha Informada": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_FechaInformada']"
+  },
+     "Ref Informada": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_Referencia']"
+  },
+     "Tran Informada": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_NroTransaccionTicket']"
+  },
+     "Otro medio inf": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']"
+  },
+     "Nro sucursal": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_NroSucursal']"
+  },
+     "Echeq nro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_EcheqNro']"
+  },
+     "Banco nro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_BancoNro']"
+  },
+     "Tipodoc pag": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='Pago_PagoInformado_IdTipoDocumentoPagador']"
+  },
+     "Doc pag": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_NroDocumentoPagador']"
+  },
+     "Medio Redes": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='PagoNPS_MedioPago']"
+  },
+     "Nro Pago Sup": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//tr[3]//td[3]//b[1]"
+  },
+     "Nro Pago Ing": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//tr[5]//td[2]//b[1]"
+  },
+     "Importe Pago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='ImportePago']"
+  },
+     "Importe Pendiente": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='ImportePendiente']"
+  },
+     "Validar label": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[contains(text(),'Pago en Curso')]"
+  },
+     "NroPagoComp": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//tr[8]//td[2]//b[1]"
+  },
+     "NroPagoCompPinf": {
+       "GetFieldBy": "xpath",
+       "ValueToFind": "//tr[6]//td[2]//b[1]"
+  },
+     "CBU_CPagador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_CbuPagador']"
+
+  },
+     "Nro_Tran_pagador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_NroTransferencia']"
+
+},
+     "PI_MarcaTC": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']"
+
+},
+     "IdSubTipoMedioPago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[@class='separator']//select[@id='PagoInformado_IdSubTipoMedioPago']"
+
+},
+     "PagoInformado_NroCheque": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_NroCheque']"
+
+},
+     "PagoInformado_FechaPagoCheque": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_FechaPagoCheque']"
+
+},
+     "PagoInformado_NombreBanco": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='Pago_PagoInformado_NombreBanco']"
+
+
+},
+     "Comp_vencido": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[contains(text(),'Vencido')]"
+
+
+},
+     "Comp_novalido": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[@class='col-md-9 text-left'][contains(.,'El parametro idDeuda no es válido')]"
+
+
+
+
+
+},
+     "Comp_pf": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//tbody/tr[3]/td[3]/b[1]"
+
+
+},
+     "Comp_TC": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//b[contains(.,'Pagado')]"
+
+
+},
+   "Btn_Cupon_Pagos": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[@id='cash_payment_action_return']"
+
+
+},
+   "Img_Barcode": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//img[@id='barcode']"
+
+
+
+
+},
+     "Cobros rec": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//a[contains(@id,'ember686')]"
+
+
+},
+     "Download cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//i[contains(@class,'fa fa-download')]"
+
+
+},
+     "Estado_Comp_Pago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//b[contains(text(),'Pagado')]"
+
+
+},
+     "Solic_Pago": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//strong[contains(text(),'Esta solicitud vence en 48 horas.')]"
+
+
+},
+     "Solic_Pago_Deudor": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//h1[contains(.,'SOLICITUD DE PAGO PUBLICADA')]"
+
+
+},
+    "Boton Archivo": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//a[@class='ember-view'][contains(.,'Por archivo')]"
+
+
+},
+
+    "Combo Convenio": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[@class='selector-opciones selector-opciones-center']"
+
+},
+
+    "Sel Convenio": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-selector-combo'][contains(.,'35448 - Convenio Matrículas')]"
+
+},
+
+    "Boton Seleccionar archivo": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//a[@class='btn btn-obe btn-rojo']"
+
+
+},
+
+    "Cargar archivo": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@type='file']"
+
+},
+
+    "Boton Mark": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[@class='shepherd-cancel-icon']"
+},
+
+    "Boton Comenzar": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[@class='btn btn-obe btn-rojo shepherd-button ']"
+
+},
+
+    "Boton Sig": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//button[@class='btn btn-obe btn-rojo shepherd-button ']"
+
+},
+
+    "Cobro descarga generador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//a[contains(.,'aqui')]"
+
+},
+
+    "Cuenta Credito": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@class='form-control valid'][contains(@id,'IdCuentaCredito')]"
+
+
+},
+
+    "CbuDebito": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'CbuDebito')]"
+
+},
+
+    "ReferenciaDebin": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'Pago_PagoDebin_ReferenciaDebin')]"
+
+
+},
+
+    "Cobros recibidos": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "(//a[@class='ember-view'][contains(.,'Cobros recibidos')])[1]"
+
+
+},
+
+    "Cons Fec Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@placeholder,'Fecha')]"
+
+},
+
+    "Cons Est Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "(//span[contains(.,'Todos los estados')])[2]"
+
+
+},
+
+    "Cons Mpag Cobro": {
+      "GetFieldBy": "xpath",
+      "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Todos los medios de pago')]"
+
+},
+
+    "Boton Tarjetas": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//a[@href='#'][contains(.,'Tarjetas')]"
+
+
+
+},
+
+    "Cons Epend Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Pendiente')]"
+
+},
+
+    "Cons EProc Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Procesando')]"
+
+
+},
+
+    "Cons ERec Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Rechazado')]"
+
+},
+
+    "Cons ECan Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Cancelado')]"
+
+
+},
+
+    "Cons EPro Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Procesando')]"
+
+
+
+},
+    "Cons MIntr Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Interbanking')]"
+
+
+
+
+
+},
+
+    "Cons MPI Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Pago Informado')]"
+
+
+},
+
+    "Cons MSup Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Pago En Supervielle')]"
+
+
+
+},
+
+    "Cons MTDeb Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Tarjeta De Débito')]"
+
+
+
+},
+
+    "Cons MTCr Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Tarjeta De Crédito')]"
+
+
+},
+
+    "Cons MTPVol Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Pago Voluntario')]"
+
+
+},
+
+    "Cons MTPCaj Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Pago Por Caja')]"
+
+
+},
+
+    "Cons MTDebin Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Debin')]"
+
+
+},
+
+    "Cons Pfac Cobro": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//span[@class='elemento-filtro-combo select-texto-chico'][contains(.,'Pago Fácil')]"
+
+
+},
+
+    "PubManFecVen": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@class,'daterangepicker-input form-control ember-text-field ember-view')]"
+
+
+  },
+
+    "FecVenNextMonth": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "(//th[contains(@class,'next available')]) "
+
+
+
+
+},
+
+    "PubFecVen": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//div[@class='daterangepicker ltr auto-apply single show-calendar opensright']"
+
+
+
+},
+
+    "CuilInterb": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@class='edit']"
+
+},
+
+    "BtnCuilInterb": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//img[contains(@alt,'Aceptar')]"
+
+
+
+
+},
+
+    "MultiC_CodCanal": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[contains(@id,'canal')]"
+
+},
+
+    "MultiC_Usuario": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'txtUsuario')]"
+
+},
+
+    "MultiC_EmpresaUsuario": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[contains(@id,'empresaUsuario')]"
+
+},
+
+    "MultiC_IdComprobante": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='PagoCanalDTO_IdComprobante']"
+
+},
+
+    "MultiC_Producto": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[contains(@id,'Producto')]"
+
+},
+
+    "MultiC_Importe": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='PagoCanalDTO_Importe1']"
+
+},
+
+    "MultiC_DocPagador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='PagoCanalDTO_DocPagador']"
+
+},
+
+    "MultiC_RazonSocialPagador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='PagoCanalDTO_RazonSocialPagador']"
+
+},
+
+    "MultiC_DocRecaudador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='PagoCanalDTO_DocRecaudador']"
+
+},
+
+    "MultiC_RazonSocialRecaudador": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='PagoCanalDTO_RazonSocialRecaudador']"
+
+
+},
+
+    "MultiC_Vencimiento1": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@id='PagoCanalDTO_Vencimiento1']"
+
+},
+
+    "MultiC_Enviar": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//input[@type='submit']"
+
+},
+
+    "MultiC_Modalidad": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//select[@id='Mode']"
+
+
+
+
+}
+
+}

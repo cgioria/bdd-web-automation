@@ -1,0 +1,79 @@
+<testsuite name="Publicacion deuda.multicanal_publicacion.Publicacion deuda multicanal" tests="1" errors="0" failures="0" skipped="0" time="18.688084" timestamp="2021-01-06T14:26:13.535697" hostname="LAPTOP-6J6TU9UN"><testcase classname="Publicacion deuda.multicanal_publicacion.Publicacion deuda multicanal" name="1 Canal Expensas" status="passed" time="18.688084"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @testlippia
+  Scenario: 1 Canal Expensas
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb ... passed in 3.874s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el combobox MultiC_CodCanal selecciono 5 ... passed in 0.126s
+    And En el campo MultiC_Usuario escribo andrusaba ... passed in 0.202s
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761 ... passed in 0.109s
+    And En el campo MultiC_IdComprobante escribo 270001631 ... passed in 0.106s
+    And En el combobox MultiC_Producto selecciono 1 ... passed in 0.065s
+    And En el campo MultiC_Importe escribo 900 ... passed in 0.111s
+    And En el campo MultiC_DocPagador escribo 90734503456 ... passed in 0.129s
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas ... passed in 0.150s
+    And En el campo MultiC_DocRecaudador escribo 30712389628 ... passed in 0.115s
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos ... passed in 0.105s
+    And En el campo MultiC_Vencimiento1 escribo 31/12/2020 ... passed in 0.155s
+    And En el combobox MultiC_Modalidad selecciono 1 ... passed in 0.100s
+    When Hago clic en MultiC_Enviar ... passed in 0.362s
+    And Esperar que finalice la carga ... passed in 0.000s
+    And Espero 10 segundos ... passed in 10.097s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.004s
+    And Capturo pantalla: Boton_CExpensas ... passed in 0.393s
+    And Tomar Captura: CExpensas ... passed in 0.345s
+    Then cierro la app ... passed in 2.142s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento MultiC_CodCanal
+get_select_elements: //select[contains(@id,'canal')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Usuario
+get_elements: //input[contains(@id,'txtUsuario')]
+get_elements: //input[contains(@id,'txtUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_EmpresaUsuario
+get_elements: //input[contains(@id,'empresaUsuario')]
+get_elements: //input[contains(@id,'empresaUsuario')]
+Esperar_Elemento: Se visualizo el elemento MultiC_IdComprobante
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+get_elements: //input[@id='PagoCanalDTO_IdComprobante']
+Esperar_Elemento: Se visualizo el elemento MultiC_Producto
+get_select_elements: //select[contains(@id,'Producto')]
+Esperar_Elemento: Se visualizo el elemento MultiC_Importe
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+get_elements: //input[@id='PagoCanalDTO_Importe1']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocPagador
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+get_elements: //input[@id='PagoCanalDTO_DocPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialPagador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialPagador']
+Esperar_Elemento: Se visualizo el elemento MultiC_DocRecaudador
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+get_elements: //input[@id='PagoCanalDTO_DocRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_RazonSocialRecaudador
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+get_elements: //input[@id='PagoCanalDTO_RazonSocialRecaudador']
+Esperar_Elemento: Se visualizo el elemento MultiC_Vencimiento1
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+get_elements: //input[@id='PagoCanalDTO_Vencimiento1']
+Esperar_Elemento: Se visualizo el elemento MultiC_Modalidad
+get_select_elements: //select[@id='Mode']
+get_elements: //input[@type='submit']
+Esperar: Inicia (10)
+Esperar: Carga Finalizada ... 
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+C:\Supervielle\Recaudaciones\src/data/capturas/06-01-2021/CHROME/142554//CExpensas_(142611).png
+Se cerrará  el DRIVER
+
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,35 @@
+<testsuite name="Comp_vencido_y_novalido.Valida comprobante vencido y comprobante no existente" tests="2" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.940039" hostname="LAPTOP-6J6TU9UN"><testcase classname="Comp_vencido_y_novalido.Valida comprobante vencido y comprobante no existente" name="Comprobante vencido" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @allure
+  Scenario: Comprobante vencido
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?2uxIWLGpQuSlA0FKcLLmAzH2lYE6E%2fBEsxcJj5xSa5M%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Valido campo Comp_vencido con Vencido ... untested in 0.000s
+    And Escribo Comp_vencido ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoDebDir ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Comp_vencido_y_novalido.Valida comprobante vencido y comprobante no existente" name="Comprobante no valido" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @allure
+  Scenario: Comprobante no valido
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?2uxIWLGpQuSlA0FKcLLmAzfBEsxcJj5xSa5M%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Valido campo Comp_novalido con El parametro idDeuda no es válido ... untested in 0.000s
+    And Escribo Comp_novalido ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

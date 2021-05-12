@@ -1,0 +1,24 @@
+<testsuite name="Sprint24.ECOI-1136_ModPago1.Pago deudor manual" tests="1" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:29.001077" hostname="LAPTOP-6J6TU9UN"><testcase classname="Sprint24.ECOI-1136_ModPago1.Pago deudor manual" name="20 Pago Supervielle" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 20 Pago Supervielle
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?fukyetcjMNA4OrljZns5I332g72Y3rWkEEaqSDUbMRc%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 29 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And En el campo Importe Pago escribo 34 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Escribo Comp_pf ... untested in 0.000s
+    And Escribo Nro Pago Sup ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoSup ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

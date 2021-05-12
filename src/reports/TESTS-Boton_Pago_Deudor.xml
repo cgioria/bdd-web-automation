@@ -1,0 +1,930 @@
+<testsuite name="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" tests="33" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.922544" hostname="LAPTOP-6J6TU9UN"><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="1 BtoB" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 1 BtoB
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 1 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoComp ... untested in 0.000s
+    And Escribo NroPagoComp ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoBtoB ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="2 Debito directo pago parcial" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 2 Debito directo pago parcial
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 2 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo CBU escribo 0270100010000012770011 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoComp ... untested in 0.000s
+    And Escribo NroPagoComp ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoDebDir ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="3 Pago Informado - Canal ECHEQ" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 3 Pago Informado - Canal ECHEQ
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 42 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Ref Informada escribo XXXXXXXX ... untested in 0.000s
+    And En el campo Echeq nro escribo 456789098765 ... untested in 0.000s
+    And En el campo Banco nro escribo 3456 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="4 Pago Informado- Canal Redes Recaudacion" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 4 Pago Informado- Canal Redes Recaudacion
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 4 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8909348233 ... untested in 0.000s
+    And En el campo Nro sucursal escribo 345 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="5 Pago Informado- Canal Pago Mis Cuentas" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 5 Pago Informado- Canal Pago Mis Cuentas
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 5 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 1 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8909348233 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="6 Pago Informado- Canal Transferencia Banelco" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 6 Pago Informado- Canal Transferencia Banelco
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 6 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And En el campo CBU_CPagador escribo 0270100010000012770011 ... untested in 0.000s
+    And En el campo Nro_Tran_pagador escribo 8904445566776 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="7 Pago Informado- Canal Transferencia Interbanking" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 7 Pago Informado- Canal Transferencia Interbanking
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 7 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And En el campo CBU_CPagador escribo 0270100010000012770011 ... untested in 0.000s
+    And En el campo Nro_Tran_pagador escribo 8904445566776 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="8 Pago Informado- Canal Tarjeta Credito VISA" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 8 Pago Informado- Canal Tarjeta Credito VISA
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 8 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And En el combobox PI_MarcaTC selecciono 18 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="9 Pago Informado- Canal Tarjeta Credito Mastercard" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 9 Pago Informado- Canal Tarjeta Credito Mastercard
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 8 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 9 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And En el combobox PI_MarcaTC selecciono 19 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="10 Pago Informado-T Canal Tarjeta Credito American" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 10 Pago Informado-T Canal Tarjeta Credito American
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 8 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And En el combobox PI_MarcaTC selecciono 20 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="11 Pago Informado-Canal Terminal-Efectivo" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 11 Pago Informado-Canal Terminal-Efectivo
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 9 ... untested in 0.000s
+    And En el combobox IdSubTipoMedioPago selecciono 21 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 1 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="12 Pago Informado-Canal Terminal-Cheque" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 12 Pago Informado-Canal Terminal-Cheque
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 9 ... untested in 0.000s
+    And En el combobox IdSubTipoMedioPago selecciono 22 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... untested in 0.000s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="13 Pago Informado-Cheque 3ro" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 13 Pago Informado-Cheque 3ro
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 10 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo PagoInformado_NroCheque escribo 8904445566776 ... untested in 0.000s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... untested in 0.000s
+    And En el campo PagoInformado_NombreBanco escribo Banco Mayo ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="14 Pago Informado-Dep. en cuenta-Efectivo" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 14 Pago Informado-Dep. en cuenta-Efectivo
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 11 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And En el combobox Otro medio inf selecciono 23 ... untested in 0.000s
+    And En el combobox Otro medio inf selecciono 24 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... untested in 0.000s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="15 Pago Informado-Dep. en cuenta-Cheque" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 15 Pago Informado-Dep. en cuenta-Cheque
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 11 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And En el combobox Otro medio inf selecciono 24 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... untested in 0.000s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="16 Pago Informado-Pago en empresa-Efectivo" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 16 Pago Informado-Pago en empresa-Efectivo
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 12 ... untested in 0.000s
+    And En el combobox Otro medio inf selecciono 25 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="17 Pago Informado-Pago en empresa-Cheque" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 17 Pago Informado-Pago en empresa-Cheque
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 12 ... untested in 0.000s
+    And En el combobox Otro medio inf selecciono 26 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And En el campo PagoInformado_NroCheque escribo 7890543223 ... untested in 0.000s
+    And En el campo PagoInformado_FechaPagoCheque escribo 24/08/2020 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="18 Pago Informado-Banelco/link" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 18 Pago Informado-Banelco/link
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 27 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Tran Informada escribo 8904445566776 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="19 Pago Informado-Tran SNP y MEP" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 19 Pago Informado-Tran SNP y MEP
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 28 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And En el campo CBU_CPagador escribo 0270100010000012770011 ... untested in 0.000s
+    And En el campo Nro_Tran_pagador escribo 8904445566776 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Genera comprobante NroPagoCompPinf ... untested in 0.000s
+    And Escribo NroPagoCompPinf ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="20 Pago Supervielle" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 20 Pago Supervielle
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 29 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Escribo Comp_pf ... untested in 0.000s
+    And Escribo Nro Pago Sup ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoSup ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="21 Tarjeta de Credito Visa" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 21 Tarjeta de Credito Visa
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 32 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 9 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 30 segundos ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito ... untested in 0.000s
+    And En el campo Numero escribo 4507990000000010 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 032022 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    When Genera comprobante Comp_TC ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Escribo Nro Pago Ing ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTCredito ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="22 Tarjeta de Credito Mastercard" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 22 Tarjeta de Credito Mastercard
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 33 ... untested in 0.000s
+    And En el combobox Cuotas selecciono 2 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 9 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito ... untested in 0.000s
+    And En el campo Numero escribo 5323629991234563 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 30 segundos ... untested in 0.000s
+    When Genera comprobante Comp_TC ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTCredito ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="23 Tarjeta de Credito Amex" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 23 Tarjeta de Credito Amex
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 34 ... untested in 0.000s
+    And En el combobox Cuotas selecciono 2 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito Laguna ... untested in 0.000s
+    And En el campo Numero escribo 376411234531007 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 1234 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    When Genera comprobante Comp_TC ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTCredito ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="24 Tarjeta de Credito Naranja" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 24 Tarjeta de Credito Naranja
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 43 ... untested in 0.000s
+    And En el combobox Cuotas selecciono 2 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 9 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito Laguna ... untested in 0.000s
+    And En el campo Numero escribo 5895629000002025 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    When Genera comprobante Comp_TC ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTCredito ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="25 Tarjeta de Credito Visa Naranja" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 25 Tarjeta de Credito Visa Naranja
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 44 ... untested in 0.000s
+    And En el combobox Cuotas selecciono 2 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 1 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Juanito ... untested in 0.000s
+    And En el campo Numero escribo 4507990000000010 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 032022 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    When Genera comprobante Comp_TC ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTCredito ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="26 Tarjeta de Credito Nevada" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 26 Tarjeta de Credito Nevada
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 45 ... untested in 0.000s
+    And En el combobox Cuotas selecciono 2 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 9 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Charles Marx ... untested in 0.000s
+    And En el campo Numero escribo 5043631200000001 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    When Genera comprobante Comp_TC ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTCredNev ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="27 Tarjeta de Debito Visa" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 27 Tarjeta de Debito Visa
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 39 ... untested in 0.000s
+    And En el combobox Tarjetas Debito selecciono 40 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... untested in 0.000s
+    And En el campo Numero escribo 4001020000000017 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 10 segundos ... untested in 0.000s
+    When Genera comprobante Comp_TC ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Capturo pantalla: pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTDebVisa ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="28 Tarjeta de Debito Maestro" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 28 Tarjeta de Debito Maestro
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 39 ... untested in 0.000s
+    And En el combobox Tarjetas Debito selecciono 41 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... untested in 0.000s
+    And En el campo Numero escribo 5010150000000000010 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 10 segundos ... untested in 0.000s
+    When Valido campo Estado_Comp_Pago con Pagado ... untested in 0.000s
+    And Escribo Comp_TC ... untested in 0.000s
+    And Capturo pantalla: pago ... untested in 0.000s
+    And Tomar Captura: CompPagoTDebMae ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="29 Pago Facil" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 29 Pago Facil
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 46 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 9 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    When Genera comprobante Comp_pf ... untested in 0.000s
+    And Escribo Comp_pf ... untested in 0.000s
+    And Capturo pantalla: Deuda ... untested in 0.000s
+    And Tomar Captura: CompPagoPF ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="30 Pago Redes Recaudacion-Pago Facil" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 30 Pago Redes Recaudacion-Pago Facil
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 31 ... untested in 0.000s
+    And En el combobox Medio Redes selecciono 35 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 9 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoRRPF ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="31 Debin" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 31 Debin
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 38 ... untested in 0.000s
+    And En el campo CbuDebito escribo 0270100010000012770011 ... untested in 0.000s
+    And En el campo ReferenciaDebin escribo Prueba scrum 23 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 3 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoDebin ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="Deprecated Pago Redes Recaudacion-RapiPago" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @deprecated
+  Scenario: Deprecated Pago Redes Recaudacion-RapiPago
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 31 ... untested in 0.000s
+    And En el combobox Medio Redes selecciono 36 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And Limpio el campo Importe Pago con 1 ... untested in 0.000s
+    And Limpio el campo Importe Pago con 0 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoRRRP ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Boton_Pago_Deudor.Pago deudor manual modalidad de pago abierta 1" name="Deprecated Pago Redes Recaudacion Provincia" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @deprecated
+  Scenario: Deprecated Pago Redes Recaudacion Provincia
+    Given Inicializo la app en la URL https://10.241.164.130:44301/pago/publicacion?owhl60rx3ha3AxzCo7zApw%3d%3d ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 31 ... untested in 0.000s
+    And En el combobox Medio Redes selecciono 37 ... untested in 0.000s
+    And Limpio el campo Importe Pago con Ctrl ... untested in 0.000s
+    And Limpio el campo Importe Pago con Del ... untested in 0.000s
+    And En el campo Importe Pago escribo 15 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Btn_Cupon_Pagos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: CompPagoRRProv ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,35 @@
+services:
+  - name: docker-spv.artifactory.gscorp.ad/docker-dind:1.0.0
+    alias: docker
+
+variables:
+  RESOURCE_PATH: src
+  REPO_SPV: docker-spv.artifactory.gscorp.ad
+  DOCKERFILE: .
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://localhost:2375
+  DOCKER_TLS_CERTDIR: ''
+
+stages:
+  - AcceptanceTests
+
+Acceptance Tests:
+  before_script:
+    - cd ${RESOURCE_PATH}/
+  image: docker-spv.artifactory.gscorp.ad/py-testing-reca-spv:1.0.0
+  stage: AcceptanceTests
+  script:
+    - /usr/local/bin/behave --junit --tags=s12 --no-skipped ./features -f pretty
+    #- curl -X POST -k -s -d @/reports/TESTS-demo_pagos.xml https://reportserver-api.k8sds.gscorp.ad/junitxml/pytest/Recaudaciones/Demo9 -H 'Content-Type:application/xml'
+    #- curl -X POST --data-binary -k -s @/reports/TESTS-demo_pagos.xml https://reportserver-api.k8sds.gscorp.ad/junitxml/pytest/Recaudaciones/Demo9 -H "Content-Type:application/xml"
+    #- curl -k -s -d  -X POST @/reports/TESTS-demo_pagos.xml https://reportserver-api.k8sds.gscorp.ad/junitxml/pytest/Recaudaciones/ECOI-1136 -H "Content-Type:application/xml"
+   # - curl -v -k -s -X POST https://reportserver-api.k8sds.gscorp.ad/junitxml/pytest/Recaudaciones/COCO -H 'Content-Type:application/xml' -d @/reports/TESTS-demo_pagos.xml
+  when: manual
+  artifacts:
+    when: always
+    paths:
+      - src/allure-results/*
+      - src/data/*
+      - src/reports/*
+      - src/allure-report/*
+    expire_in: 1 day

@@ -1,0 +1,88 @@
+<testsuite name="Publicacion deuda.multicanal_publicacion_deuda.Publicacion deuda multicanal" tests="3" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.960957" hostname="LAPTOP-6J6TU9UN"><testcase classname="Publicacion deuda.multicanal_publicacion_deuda.Publicacion deuda multicanal" name="1 Canal Expensas" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @testlippia
+  Scenario: 1 Canal Expensas
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox MultiC_CodCanal selecciono 5 ... untested in 0.000s
+    And En el campo MultiC_Usuario escribo andrusaba ... untested in 0.000s
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761 ... untested in 0.000s
+    And En el campo MultiC_IdComprobante escribo 270001631 ... untested in 0.000s
+    And En el combobox MultiC_Producto selecciono 1 ... untested in 0.000s
+    And En el campo MultiC_Importe escribo 900 ... untested in 0.000s
+    And En el campo MultiC_DocPagador escribo 90734503456 ... untested in 0.000s
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas ... untested in 0.000s
+    And En el campo MultiC_DocRecaudador escribo 30712389628 ... untested in 0.000s
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos ... untested in 0.000s
+    And En el campo MultiC_Vencimiento1 escribo 31/12/2020 ... untested in 0.000s
+    And En el combobox MultiC_Modalidad selecciono 1 ... untested in 0.000s
+    When Hago clic en MultiC_Enviar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 29 segundos ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And Capturo pantalla: Boton_CExpensas ... untested in 0.000s
+    And Tomar Captura: CExpensas ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Publicacion deuda.multicanal_publicacion_deuda.Publicacion deuda multicanal" name="2 Mun Godoy Cruz" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 2 Mun Godoy Cruz
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox MultiC_CodCanal selecciono 3 ... untested in 0.000s
+    And En el campo MultiC_Usuario escribo andrusaba ... untested in 0.000s
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761 ... untested in 0.000s
+    And En el campo MultiC_IdComprobante escribo 270001631 ... untested in 0.000s
+    And En el combobox MultiC_Producto selecciono 1 ... untested in 0.000s
+    And En el campo MultiC_Importe escribo 8 ... untested in 0.000s
+    And En el campo MultiC_DocPagador escribo 90734503456 ... untested in 0.000s
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas ... untested in 0.000s
+    And En el campo MultiC_DocRecaudador escribo 30712389628 ... untested in 0.000s
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos ... untested in 0.000s
+    And En el campo MultiC_Vencimiento1 escribo 30/12/2020 ... untested in 0.000s
+    And En el combobox MultiC_Modalidad selecciono 1 ... untested in 0.000s
+    When Hago clic en MultiC_Enviar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Boton_MunGodoyC ... untested in 0.000s
+    And Tomar Captura: MunGodoyC ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Publicacion deuda.multicanal_publicacion_deuda.Publicacion deuda multicanal" name="3 Mun Mendoza" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 3 Mun Mendoza
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el combobox MultiC_CodCanal selecciono 4 ... untested in 0.000s
+    And En el campo MultiC_Usuario escribo andrusaba ... untested in 0.000s
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761 ... untested in 0.000s
+    And En el campo MultiC_IdComprobante escribo 270001631 ... untested in 0.000s
+    And En el combobox MultiC_Producto selecciono 1 ... untested in 0.000s
+    And En el campo MultiC_Importe escribo 7 ... untested in 0.000s
+    And En el campo MultiC_DocPagador escribo 90734503456 ... untested in 0.000s
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas ... untested in 0.000s
+    And En el campo MultiC_DocRecaudador escribo 30712389628 ... untested in 0.000s
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos ... untested in 0.000s
+    And En el campo MultiC_Vencimiento1 escribo 30/12/2020 ... untested in 0.000s
+    And En el combobox MultiC_Modalidad selecciono 1 ... untested in 0.000s
+    When Hago clic en MultiC_Enviar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Boton_MunMendoza ... untested in 0.000s
+    And Tomar Captura: MunMendoza ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

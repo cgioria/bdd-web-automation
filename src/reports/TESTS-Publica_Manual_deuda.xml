@@ -1,0 +1,118 @@
+<testsuite name="Publica_Manual_deuda.Publicacion deuda manual" tests="1" errors="1" failures="0" skipped="0" time="28.709808" timestamp="2020-10-19T16:15:37.641185" hostname="LAPTOP-6J6TU9UN"><testcase classname="Publica_Manual_deuda.Publicacion deuda manual" name="Login y generacion comprobante manual" status="failed" time="28.709808"><error type="TimeoutException" message="Message: &#10;">
+<![CDATA[
+Failing step: Then Valido campo Solic_Pago con Esta solicitud vence en 48 horas. ... failed in 21.095s
+Location: features/Publica_Manual_deuda.feature:26
+Traceback (most recent call last):
+  File "c:\python38\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\python38\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\Steps.py", line 60, in step_impl
+    Selenium.assert_text(self, locator, text)
+  File "C:\Supervielle\Recaudaciones\src\functions\Functions.py", line 658, in assert_text
+    wait.until(EC.presence_of_element_located((By.XPATH, self.json_ValueToFind)))
+  File "c:\python38\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Identificacion
+get_elements: //input[contains(@id,'identification')]
+get_elements: //input[contains(@id,'identification')]
+Esperar_Elemento: Se visualizo el elemento Password
+get_elements: //input[contains(@id,'password')]
+get_elements: //input[contains(@id,'password')]
+get_elements: //button[contains(@id,'btn_ingresar')]
+get_elements: //small[@id='empresa-seleccionada-nombre']
+get_elements: //li[@data-option-index=0]
+get_elements: //a[@href='#'][contains(.,'Cobros')]
+get_elements: (//a[@class='ember-view'][contains(.,'Manual')])[3]
+Esperar_Elemento: Se visualizo el elemento Descripcion
+get_elements: //input[contains(@id,'descripcion')]
+get_elements: //input[contains(@id,'descripcion')]
+Esperar_Elemento: Se visualizo el elemento Importe
+get_elements: //input[contains(@id,'importe')]
+get_elements: //input[contains(@id,'importe')]
+Esperar_Elemento: Se visualizo el elemento Numero Documento
+get_elements: //input[contains(@id,'numeroDocumentoPagador')]
+get_elements: //input[contains(@id,'numeroDocumentoPagador')]
+Esperar_Elemento: Se visualizo el elemento Nombre Pagador
+get_elements: //input[contains(@id,'nombrePagador')]
+get_elements: //input[contains(@id,'nombrePagador')]
+Esperar_Elemento: Se visualizo el elemento Email
+get_elements: //input[contains(@type,'email')]
+get_elements: //input[contains(@type,'email')]
+get_elements: //button[@type='button'][contains(.,'Publicar')]]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login y generacion comprobante manual
+    Given Abrir la aplicacion ... passed in 5.284s
+    And Cargo el DOM de la App: recaudaciones ... passed in 0.001s
+    And En el campo Identificacion escribo andrusaba ... passed in 0.093s
+    And En el campo Password escribo Info1212 ... passed in 0.086s
+    And Hago clic en Boton Ingresar ... passed in 0.041s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And Hago clic en Selecciona Empresa ... passed in 0.759s
+    And Hago clic en Selecciona Vademecum ... passed in 0.071s
+    And Hago clic en Boton Cobro ... passed in 0.063s
+    And Hago clic en Boton Manual ... passed in 0.088s
+    And Esperar que finalice la carga ... passed in 0.001s
+    And En el campo Descripcion escribo Prueba automatica ... passed in 0.635s
+    And En el campo Importe escribo 899024 ... passed in 0.109s
+    And En el campo Numero Documento escribo 18163839 ... passed in 0.112s
+    And En el campo Nombre Pagador escribo Claudio Gioria ... passed in 0.120s
+    And En el campo Email escribo crgioria@gmail.com ... passed in 0.116s
+    When Hago clic en Boton Publicar ... passed in 0.035s
+    And Esperar que finalice la carga ... passed in 0.001s
+    Then Valido campo Solic_Pago con Esta solicitud vence en 48 horas. ... failed in 21.095s
+    And Escribo Link Pago ... skipped in 0.000s
+    And Capturo pantalla: Deuda ... skipped in 0.000s
+    And Tomar Captura: LinkDeuda ... skipped in 0.000s
+    And cierro la app ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Directorio Base: C:\Supervielle\Recaudaciones\src
+----------------
+CHROME
+---------------
+get_json_file: C:\Supervielle\Recaudaciones\src/pages/recaudaciones.json
+Esperar_Elemento: Se visualizo el elemento Identificacion
+get_elements: //input[contains(@id,'identification')]
+get_elements: //input[contains(@id,'identification')]
+Esperar_Elemento: Se visualizo el elemento Password
+get_elements: //input[contains(@id,'password')]
+get_elements: //input[contains(@id,'password')]
+get_elements: //button[contains(@id,'btn_ingresar')]
+get_elements: //small[@id='empresa-seleccionada-nombre']
+get_elements: //li[@data-option-index=0]
+get_elements: //a[@href='#'][contains(.,'Cobros')]
+get_elements: (//a[@class='ember-view'][contains(.,'Manual')])[3]
+Esperar_Elemento: Se visualizo el elemento Descripcion
+get_elements: //input[contains(@id,'descripcion')]
+get_elements: //input[contains(@id,'descripcion')]
+Esperar_Elemento: Se visualizo el elemento Importe
+get_elements: //input[contains(@id,'importe')]
+get_elements: //input[contains(@id,'importe')]
+Esperar_Elemento: Se visualizo el elemento Numero Documento
+get_elements: //input[contains(@id,'numeroDocumentoPagador')]
+get_elements: //input[contains(@id,'numeroDocumentoPagador')]
+Esperar_Elemento: Se visualizo el elemento Nombre Pagador
+get_elements: //input[contains(@id,'nombrePagador')]
+get_elements: //input[contains(@id,'nombrePagador')]
+Esperar_Elemento: Se visualizo el elemento Email
+get_elements: //input[contains(@type,'email')]
+get_elements: //input[contains(@type,'email')]
+get_elements: //button[@type='button'][contains(.,'Publicar')]
+
+]]>
+</system-out></testcase></testsuite>

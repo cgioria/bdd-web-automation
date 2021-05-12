@@ -1,0 +1,114 @@
+{
+  "total" : 11,
+  "items" : [ {
+    "uid" : "18b6bdba3937fb206e788d1c216cb5b7",
+    "name" : "Pago deuda manual modalidad de pago abierta 1",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "9d03684c453f0d2b866a328327a66966",
+    "name" : "ECOI-1115",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
+    "uid" : "a2327c04eb8cb24b15b9ef7ff03cf5ae",
+    "name" : "Pago deuda manual",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 40,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 42
+    }
+  }, {
+    "uid" : "cb51a311a4106aef8d7a4f9a70a52a2e",
+    "name" : "Publicacion deuda manual",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "56e35cbdd42959afe6cd619ac5026801",
+    "name" : "Pago DEUDA por Archivo OBE",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 9,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "9c768e2f930002172c9b8723f7e65a44",
+    "name" : "Pago DEUDOR por archivo OBE",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 9,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "a25954753964de8ee43917d10644ba01",
+    "name" : "Pago DEUDA manual por OBE",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 9,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "325b813cf127e6d7d385934a6d374df4",
+    "name" : "Pago DEUDA  por archivo Sftp",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 9,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "0ecdd5b38cd75edb080c30de281f0267",
+    "name" : "Pago DEUDOR  por archivo SFTP",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 9,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "e09c700914c41b111a764f478d96dbab",
+    "name" : "Funciones basicas de selenium con BDD",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 8,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 8
+    }
+  } ]
+}

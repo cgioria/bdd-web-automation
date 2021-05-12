@@ -1,0 +1,219 @@
+<testsuite name="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" tests="9" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.969448" hostname="LAPTOP-6J6TU9UN"><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="1 Debito directo pago total" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 1 Debito directo pago total
+    Given Inicializo la app en la URL  https://10.241.161.205:44301/pago/publicacion?Xq37QYFVraFSF%2b8rjOKRRXt%2fV6nCxat3D9sTEqG4zhE%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 2 ... untested in 0.000s
+    And En el campo CBU escribo 0270100010000012770011 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Escribo Nro Pago Sup ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoDebDir ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="2 Pago Informado ECHEQ" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 2 Pago Informado ECHEQ
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?ZfrqZ2pMDtI6SjirKI1Bwu%2fsSNGUQiwrMjm9xM92Jww%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 3 ... untested in 0.000s
+    And En el combobox Canal selecciono 42 ... untested in 0.000s
+    And En el campo Fecha Informada escribo 24/08/2020 ... untested in 0.000s
+    And En el campo Ref Informada escribo XXXXXXXX ... untested in 0.000s
+    And En el campo Echeq nro escribo 456789098765 ... untested in 0.000s
+    And En el campo Banco nro escribo 3456 ... untested in 0.000s
+    And En el combobox Tipodoc pag selecciono 26 ... untested in 0.000s
+    And En el campo Doc pag escribo 23456987 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Espero 5 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoInfEch ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="3 Pago Supervielle" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 3 Pago Supervielle
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?Be56vuNVspGMxSUVWmWl770C7X3dk36q7Rm2pEvZ%2fEg%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 29 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoSup ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="4.1 Tarjeta de Credito Visa" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 4.1 Tarjeta de Credito Visa
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?xSrSSvC9f8Kz2zvJ3A3JGvq7zO2Cvh%2bzbxLZa0gVV5Q%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 32 ... untested in 0.000s
+    And En el combobox Cuotas selecciono 2 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Charles Darwin ... untested in 0.000s
+    And En el campo Numero escribo 4507990000000010 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 032022 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoTCredito ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="4.6 Tarjeta de Credito Nevada" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 4.6 Tarjeta de Credito Nevada
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?E2I7HxiFCxoUx2RwJM9RYQIIyUIR9z07qORQgtq3Rgc%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 30 ... untested in 0.000s
+    And En el combobox Tarjetas selecciono 45 ... untested in 0.000s
+    And En el combobox Cuotas selecciono 2 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Charles Marx ... untested in 0.000s
+    And En el campo Numero escribo 5043631200000001 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoTCredNev ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="5 Pago Redes Recaudacion Provincia" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 5 Pago Redes Recaudacion Provincia
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?GNcMZvFb8QcdHHX6IMpoFLB0v1%2flHFHugR%2bguS9BVC0%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 31 ... untested in 0.000s
+    And En el combobox Medio Redes selecciono 37 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Confirma ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoRRProv ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="7.1 Tarjeta de Debito Visa" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 7.1 Tarjeta de Debito Visa
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?KYBxap65BjCChrD2eV5Nyrz%2fYTbDYs0g%2fZM6lAA0R5Y%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 39 ... untested in 0.000s
+    And En el combobox Tarjetas Debito selecciono 40 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... untested in 0.000s
+    And En el campo Numero escribo 4001020000000017 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Escribo Nro Pago Ing ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoTDebVisa ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="7.2 Tarjeta de Debito Maestro" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 7.2 Tarjeta de Debito Maestro
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?Ficai6WKsq1KuDTsYR3RJby9TtaAo9JTKIdg8q%2finAg%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 39 ... untested in 0.000s
+    And En el combobox Tarjetas Debito selecciono 41 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And En el campo Titular Tarjeta escribo Martin Heidegger ... untested in 0.000s
+    And En el campo Numero escribo 4001020000000017 ... untested in 0.000s
+    And En el campo Fecha Ven escribo 122023 ... untested in 0.000s
+    And En el campo Codigo seg escribo 123 ... untested in 0.000s
+    And Hago clic en Boton pago Ingenico ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: pago ... untested in 0.000s
+    And Tomar Captura: 1CompPagoTDebMae ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="Sprint21.Sprint21_Pago_Manual_Deuda_Obe.Pago DEUDA manual por OBE" name="9 Pago Facil" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: 9 Pago Facil
+    Given Inicializo la app en la URL https://10.241.161.205:44301/pago/publicacion?aMOEptrOyYek%2fnYKslnYIXPhU5bfbcsZFDPtkPheG2o%3d ... untested in 0.000s
+    And Cargo el DOM de la App: obe ... untested in 0.000s
+    And En el combobox Medio de Pago selecciono 46 ... untested in 0.000s
+    And Hago clic en Boton Pago ... untested in 0.000s
+    And Hago clic en Boton Generar Cupon ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    And Capturo pantalla: Deuda ... untested in 0.000s
+    And Tomar Captura: 1CompPagoPF ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

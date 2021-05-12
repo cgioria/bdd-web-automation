@@ -1,0 +1,29 @@
+<testsuite name="Publicacion deuda.Publica_Archivo_Deuda.Publica deuda por archivo" tests="1" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.954969" hostname="LAPTOP-6J6TU9UN"><testcase classname="Publicacion deuda.Publica_Archivo_Deuda.Publica deuda por archivo" name="Upload y procesamiento de archivo csv para publicar deuda" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Upload y procesamiento de archivo csv para publicar deuda
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Boton Archivo ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Mark ... untested in 0.000s
+    And Hago clic en Combo Convenio ... untested in 0.000s
+    And Hago clic en Sel Convenio ... untested in 0.000s
+    And Hago clic en Boton Seleccionar archivo ... untested in 0.000s
+    And Cargo archivo: borra_deuda.csv ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 500 segundos ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

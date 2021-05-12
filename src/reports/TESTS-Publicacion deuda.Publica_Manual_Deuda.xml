@@ -1,0 +1,40 @@
+<testsuite name="Publicacion deuda.Publica_Manual_Deuda.Publicacion deuda manual" tests="1" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.956965" hostname="LAPTOP-6J6TU9UN"><testcase classname="Publicacion deuda.Publica_Manual_Deuda.Publicacion deuda manual" name="Login y generacion comprobante manual" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Login y generacion comprobante manual
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Escribo Boton Cobro ... untested in 0.000s
+    And Hago clic en Boton Manual ... untested in 0.000s
+    And Escribo Boton Manual ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Combo Convenio ... untested in 0.000s
+    And Hago clic en Combo Expensas ... untested in 0.000s
+    And En el campo Numero Documento escribo 10638390 ... untested in 0.000s
+    And En el campo Nombre Pagador escribo Juan Perez ... untested in 0.000s
+    And En el campo Email escribo crgioria@gmail.com ... untested in 0.000s
+    And En el campo Importe escribo 4567 ... untested in 0.000s
+    And En el campo Descripcion escribo jira ... untested in 0.000s
+    And Hago clic en PubManFecVen ... untested in 0.000s
+    And Hago clic en FecVenNextMonth ... untested in 0.000s
+    And Hago clic en PubFecVen ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    When Hago clic en Boton Publicar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Espero 3 segundos ... untested in 0.000s
+    Then Valido campo Solic_Pago_Deudor con SOLICITUD DE PAGO PUBLICADA ... untested in 0.000s
+    And Escribo Link Pago ... untested in 0.000s
+    And Capturo pantalla: Deuda ... untested in 0.000s
+    And Tomar Captura: LinkDeuda ... untested in 0.000s
+    And cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

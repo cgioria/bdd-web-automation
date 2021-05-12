@@ -1,0 +1,30 @@
+Feature: Publicacion deuda multicanal # features/Publicacion deuda/multicanal_publicacion.feature:2
+  Como Cobrador
+  Quiero Realizar la publicacion manual de deuda por multicanal
+  Para gestionar la cobranza
+  Background:   # features/Publicacion deuda/multicanal_publicacion.feature:7
+
+  @testlippia
+  Scenario: 1 Canal Expensas                                             # features/Publicacion deuda/multicanal_publicacion.feature:13
+    Given Inicializo la app en la URL http://dwsir-01:21401/Home/RecaWeb # features/steps/Steps.py:19
+    And Cargo el DOM de la App: recaudaciones                            # features/steps/Steps.py:32
+    And En el combobox MultiC_CodCanal selecciono 5                      # features/steps/Steps.py:75
+    And En el campo MultiC_Usuario escribo andrusaba                     # features/steps/Steps.py:40
+    And En el campo MultiC_EmpresaUsuario escribo 20040374761            # features/steps/Steps.py:40
+    And En el campo MultiC_IdComprobante escribo 270001631               # features/steps/Steps.py:40
+    And En el combobox MultiC_Producto selecciono 1                      # features/steps/Steps.py:75
+    And En el campo MultiC_Importe escribo 900                           # features/steps/Steps.py:40
+    And En el campo MultiC_DocPagador escribo 90734503456                # features/steps/Steps.py:40
+    And En el campo MultiC_RazonSocialPagador escribo Las Leñas          # features/steps/Steps.py:40
+    And En el campo MultiC_DocRecaudador escribo 30712389628             # features/steps/Steps.py:40
+    And En el campo MultiC_RazonSocialRecaudador escribo Los Patos       # features/steps/Steps.py:40
+    And En el campo MultiC_Vencimiento1 escribo 31/12/2020               # features/steps/Steps.py:40
+    And En el combobox MultiC_Modalidad selecciono 1                     # features/steps/Steps.py:75
+    When Hago clic en MultiC_Enviar                                      # features/steps/Steps.py:88
+    And Esperar que finalice la carga                                    # features/steps/Steps.py:112
+    And Espero 10 segundos                                               # features/steps/Steps.py:129
+    And Cargo el DOM de la App: recaudaciones                            # features/steps/Steps.py:32
+    And Capturo pantalla: Boton_CExpensas                                # features/steps/Steps.py:50
+    And Tomar Captura: CExpensas                                         # features/steps/Steps.py:54
+    Then cierro la app                                                   # features/steps/Steps.py:28
+

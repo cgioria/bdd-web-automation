@@ -1,0 +1,26 @@
+<testsuite name="Descarga_cobros_recibidos.Publicacion deuda manual" tests="1" errors="0" failures="0" skipped="0" time="0.0" timestamp="2021-02-03T17:00:28.942033" hostname="LAPTOP-6J6TU9UN"><testcase classname="Descarga_cobros_recibidos.Publicacion deuda manual" name="Login y generacion comprobante manual" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @regression
+  Scenario: Login y generacion comprobante manual
+    Given Abrir la aplicacion ... untested in 0.000s
+    And Cargo el DOM de la App: recaudaciones ... untested in 0.000s
+    And En el campo Identificacion escribo andrusaba ... untested in 0.000s
+    And En el campo Password escribo Info1212 ... untested in 0.000s
+    And Hago clic en Boton Ingresar ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Selecciona Empresa ... untested in 0.000s
+    And Hago clic en Selecciona Vademecum ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Boton Cobro ... untested in 0.000s
+    And Hago clic en Cobros recibidos ... untested in 0.000s
+    And Esperar que finalice la carga ... untested in 0.000s
+    And Hago clic en Download cobro ... untested in 0.000s
+    And Espero 20 segundos ... untested in 0.000s
+    Then cierro la app ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
