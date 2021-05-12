@@ -20,6 +20,7 @@ import time
 import datetime
 import re
 import os
+
 Scenario = {}
 diaGlobal= time.strftime(Inicializar.DateFormat)  # formato aaaa/mm/dd
 horaGlobal = time.strftime(Inicializar.HourFormat)  # formato 24 houras
